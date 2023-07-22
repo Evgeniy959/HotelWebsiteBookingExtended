@@ -1,0 +1,21 @@
+﻿@model HotelWebsiteBooking.Models.Entity.Client
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h4><strong>@Model.Name!</strong>  You have successfully booked a room <strong>from @ViewBag.Start to @ViewBag.End.</strong></h4>
+                    <h4>Booking information will be sent to you shortly.</h4>
+                    <div class="bt-option color-text">
+                        <a asp-controller="Home" asp-action="Index">Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

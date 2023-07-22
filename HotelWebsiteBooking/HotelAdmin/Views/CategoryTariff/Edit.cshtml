@@ -1,0 +1,53 @@
+﻿@model HotelAdmin.Models.Entity.CategoryTariff
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-3">
+            <div class="card" style="margin-top:15px">
+                <div class="card-header">
+                    <h5 class="card-title text-center"> Изменить</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+                        <div class="form-group">
+                            <label asp-for="CategoryId" class="control-label"></label>
+                            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TariffPlanId" class="control-label"></label>
+                            <select asp-for="TariffPlanId" class="form-control" asp-items="ViewBag.TariffPlanId"></select>
+                            <span asp-validation-for="TariffPlanId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Price" class="control-label"></label>
+                            <input asp-for="Price" class="form-control" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="submit" class="form-control btn btn-primary" value="Save" />
+                                </div>
+                                <div class="col-6">
+                                    <a asp-action="Index" asp-controller="CategoryTariff" class="form-control btn btn-secondary">Сancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

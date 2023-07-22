@@ -1,0 +1,72 @@
+﻿@model HotelWebsiteBooking.Models.Entity.Room
+
+@{
+    ViewData["Title"] = "Tariff";
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Выберите тариф</h2>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-3 media-img-wrapper">
+            <a href="">
+                <img class="media" src="~/@Model.Category.Photo" alt="Photo" />
+            </a>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <a href="">
+                    <h4 class="card-title"><strong>@Model.Category.Name</strong></h4>
+                </a>
+                <p class="card-text">Вместимость:&ensp; до @Model.Category.PersonsCount мест, &emsp; Площадь:&ensp; @Model.Category.Square, &emsp; Количество комнат:&ensp; 1, &emsp; Количество гостей:&ensp; @ViewBag.Guest</p>
+                <h5>
+                    Wi-Fi, кондиционер, телевизор, ванная комната с ванной...
+                </h5>                
+            </div>
+            <div class="room-item">
+                <div class="ri-text"><a asp-controller="Home" asp-action="@Model.Category.Path" class="primary-btn">Подробнее</a></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<section class="rooms-section spad">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Category.TariffAdmins)
+            {
+                <div class="col-lg-3 col-md-6">
+                    <div class="room-item">                            
+                        <div class="ri-text">
+                            <div class="col-lg-2">
+                                <div class="breadcrumb-text">
+                                    <div class="bt-option">
+                                        <a asp-controller="Home" asp-action="Index"><span style="font-size: 14px">Подробнее</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h4>@item.TariffPlan.Description</h4>
+                            <h3>@(item.Price * ViewBag.Days) Р<span class="room-price">/Цена за @ViewBag.Days ночи</span></h3>
+                            <br>
+                            <div class="top-nav">
+                                <div class="tn-right">
+                                    <a asp-controller="Room" asp-action="Booking" asp-route-tariffId="@item.Id" asp-route-roomId="@Model.Id" asp-route-price="@(item.Price * ViewBag.Days)" asp-route-tariff="@item.TariffPlan.Description" class="bk-btn">Забронировать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

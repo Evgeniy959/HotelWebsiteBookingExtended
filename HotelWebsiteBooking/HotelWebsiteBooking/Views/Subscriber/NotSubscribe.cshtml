@@ -1,0 +1,20 @@
+﻿@model HotelWebsiteBooking.Models.Entity.Subscriber
+
+@{
+    ViewData["Title"] = "NotSubscribe";
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h4>User with mail @Model.Email already subscribed to our news! Enter another email</h4>
+                    <div class="bt-option">
+                        <a asp-controller="Home" asp-action="Index">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
