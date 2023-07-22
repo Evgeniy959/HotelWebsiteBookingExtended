@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj": {}
+    "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj": {}
   },
   "projects": {
-    "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj": {
+    "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj",
+        "projectUniqueName": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj",
         "projectName": "HotelWebsiteBooking",
-        "projectPath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj",
+        "projectPath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj",
         "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
-        "outputPath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelWebsiteBooking\\obj\\",
+        "outputPath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

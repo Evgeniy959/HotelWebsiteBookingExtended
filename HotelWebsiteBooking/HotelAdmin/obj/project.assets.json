@@ -11467,11 +11467,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelAdmin\\HotelAdmin.csproj",
+      "projectUniqueName": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelAdmin\\HotelAdmin.csproj",
       "projectName": "HotelAdmin",
-      "projectPath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelAdmin\\HotelAdmin.csproj",
+      "projectPath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelAdmin\\HotelAdmin.csproj",
       "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
-      "outputPath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelAdmin\\obj\\",
+      "outputPath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelAdmin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

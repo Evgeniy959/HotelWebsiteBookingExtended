@@ -9,189 +9,189 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HotelAdmin
 build_property.RootNamespace = HotelAdmin
-build_property.ProjectDir = D:\Study-11.02.2023\Study\Диплом\Проекты\GraduationWork\HotelWebsiteBooking\HotelAdmin\
+build_property.ProjectDir = D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelAdmin\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Study-11.02.2023\Study\Диплом\Проекты\GraduationWork\HotelWebsiteBooking\HotelAdmin
+build_property.MSBuildProjectDirectory = D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelAdmin
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Access/Login.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Access/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Add.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlUYXJpZmZcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlUYXJpZmZcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Details.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlUYXJpZmZcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Edit.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlUYXJpZmZcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/CategoryTariff/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlUYXJpZmZcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Category/Add.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Category/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Category/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Category/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Category/Edit.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Category/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Client/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Client/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Client/Details.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Client/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Client/Edit.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Client/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Client/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Client/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Comment/Add.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Comment/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Comment/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Comment/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Comment/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Comment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Home/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Home/Privacy.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/OrderPay/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/OrderPay/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQYXlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/OrderPay/Details.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/OrderPay/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQYXlcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/OrderPay/Edit.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/OrderPay/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQYXlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/OrderPay/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/OrderPay/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQYXlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Order/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Order/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Order/Details.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Order/Edit.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Order/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/RoomDate/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/RoomDate/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbURhdGVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/RoomDate/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/RoomDate/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbURhdGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Room/Add.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Room/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Room/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Room/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Room/Details.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Room/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Room/Edit.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Room/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Room/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Room/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Shared/Error.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Subscriber/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Subscriber/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaWJlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Subscriber/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Subscriber/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaWJlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/TariffPlan/Add.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/TariffPlan/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZmUGxhblxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/TariffPlan/Delete.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/TariffPlan/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZmUGxhblxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/TariffPlan/Edit.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/TariffPlan/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZmUGxhblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/TariffPlan/Index.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/TariffPlan/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyaWZmUGxhblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/_ViewImports.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/_ViewStart.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study-11.02.2023/Study/Диплом/Проекты/GraduationWork/HotelWebsiteBooking/HotelAdmin/Views/Shared/_Layout.cshtml]
+[D:/Study-11.02.2023/Study/Диплом/Проекты/HotelWebsiteBookingExtended/HotelWebsiteBooking/HotelAdmin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tl3mi2qkhf

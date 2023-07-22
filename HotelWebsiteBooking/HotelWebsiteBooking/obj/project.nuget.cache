@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J311bnd/mRGBXFMaUUoOqj2eeVsWlXm5UvmGcIbO75WbDGDlKX6zV5SwS9esjPvg26vCl35uG9YCdD9QnkmjFw==",
+  "dgSpecHash": "PJbeco0Y6o7HLdZy/FlwhV2WmMDehHOqs9ISKFapojzYgiPPkoOKwvLw6zmExvgRyN/hHvd7fDKNj6xjS1Mocw==",
   "success": true,
-  "projectFilePath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\GraduationWork\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj",
+  "projectFilePath": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\HotelWebsiteBooking.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Пользователь\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Пользователь\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
