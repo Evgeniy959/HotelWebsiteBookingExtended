@@ -1,0 +1,48 @@
+﻿@model HotelAdmin.Models.Entity.TariffPlan
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-3">
+            <div class="card" style="margin-top:15px">
+                <div class="card-header">
+                    <h5 class="card-title text-center"> Изменить тарифный план</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" asp-controller="TariffPlan" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+                        <div class="form-group">
+                            <label class="control-label">Описание</label>
+                            <input asp-for="Description" class="form-control" />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="submit" class="form-control btn btn-primary" value="Save" />
+                                </div>
+                                <div class="col-6">
+                                    <a asp-action="Index" asp-controller="TariffPlan" class="form-control btn btn-secondary">Сancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script src="/lib/chosen/chosen.jquery.js"></script>
+    <script>
+        $("#tariffPlans").chosen();
+    </script>
+}

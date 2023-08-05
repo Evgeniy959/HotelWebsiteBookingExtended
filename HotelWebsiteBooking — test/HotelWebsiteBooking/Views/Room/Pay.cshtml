@@ -1,0 +1,48 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<HotelWebsiteBooking.Data.StripeOptions> Stripe
+@model HotelWebsiteBooking.Models.Entity.Client
+
+@{
+    ViewData["Title"] = "Pay";
+}
+
+@if (TempData.ContainsKey("Status"))
+{
+    <div class="alert alert-danger" role="alert">
+        <strong>Notification!</strong> @TempData["Status"]
+    </div>
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <div>
+                        <form asp-action="Pay" asp-controller="Room" method="post">
+                            <article>
+                                <label>Сумма: @ViewBag.Price руб</label>
+                                <input name="price" value="@ViewBag.Price" type="hidden" />
+                                <input name="content" value="@ViewBag.Сontent" type="hidden" />
+                                <input asp-for="Name" type="hidden" />
+                                <input asp-for="Surname" type="hidden" />
+                                <input asp-for="Email" type="hidden" />
+                                <input asp-for="Phone" type="hidden" />
+                                <input asp-for="RoomId" type="hidden" />
+                                <input asp-for="TariffId" type="hidden" />
+
+                            </article>
+                            <script src="//checkout.stripe.com/v2/checkout.js"
+                                    class="stripe-button" 
+                                    data-key="@Stripe.Value.PublishableKey" 
+                                    data-locale="auto" 
+                                    data-description="К оплате: @ViewBag.Price Р"
+                                    data-email="@ViewBag.Email">
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

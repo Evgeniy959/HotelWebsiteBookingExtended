@@ -1,0 +1,93 @@
+﻿@model IEnumerable<HotelAdmin.Models.Entity.Comment>
+
+@{
+    ViewData["Title"] = "Index";
+    int count = 1+(ViewBag.CurrentPage-1)*10;
+}
+
+<h1 class="text-center">List comments</h1>
+
+<p>
+    <a asp-action="Add" class="btn btn-primary">Add comment</a>
+</p>
+
+<table class="table table-1">
+    <thead>
+        <tr class="tab-row">
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Content</th>
+            <th scope="col">Date</th>
+            <th scope="col"><div class="col-14">Actions</div></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="tab-row">
+            <th scope="row">@(count++)</th>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Content</td>
+            <td>@item.Date</td>
+            
+            <td><div class="col-14"><a asp-action="Delete" asp-controller="Comment" asp-route-id="@item.Id" class="form-control btn btn-danger">Delete</a></div></td>
+        </tr>
+}
+    </tbody>
+</table>
+<br />
+<nav aria-label="Page navigation example" class="d-flex align-content-center justify-content-sm-center">
+    <ul class="pagination">
+
+        @if (ViewBag.CurrentPage > 1)
+        {
+            <li class="page-item">
+                <a class="page-link"
+               asp-action="Index"
+               asp-controller="Comment"
+               asp-route-page="@(ViewBag.CurrentPage-1)">Previous</a>
+            </li>
+        }
+
+        @for (var i = ViewBag.CurrentPage - 3; i <= ViewBag.CurrentPage + 3; i++)
+        {
+
+            @if (i > 0 && i <= ViewBag.TotalPages)
+            {
+                @if (ViewBag.CurrentPage == i)
+                {
+                    <li class="page-item active">
+                        <a class="page-link"
+                        asp-action="Index"
+                        asp-controller="Comment"
+                        asp-route-page="@i">@i</a>
+                    </li>
+                }
+                else
+                {
+
+                    <li class="page-item">
+                        <a class="page-link"
+                        asp-action="Index"
+                        asp-controller="Comment"
+                        asp-route-page="@i">@i</a>
+                    </li>
+                }
+            }
+
+        }
+
+        @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+        {
+            <li class="page-item">
+                <a class="page-link"
+                asp-action="Index"
+                asp-controller="Comment"
+                asp-route-page="@(ViewBag.CurrentPage+1)">Next</a>
+            </li>
+        }
+
+    </ul>
+</nav>
+

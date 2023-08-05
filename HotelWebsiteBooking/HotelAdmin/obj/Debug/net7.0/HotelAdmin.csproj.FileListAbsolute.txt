@@ -1076,3 +1076,5 @@ D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtende
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelAdmin\obj\Debug\net7.0\HotelAdmin.pdb
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelAdmin\obj\Debug\net7.0\HotelAdmin.genruntimeconfig.cache
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelAdmin\obj\Debug\net7.0\ref\HotelAdmin.dll
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelAdmin\bin\Debug\net7.0\MailKitLite.dll
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelAdmin\bin\Debug\net7.0\MimeKitLite.dll

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<HotelWebsiteBooking.Models.Entity.Room>
+
+@{
+    ViewData["Title"] = "Rooms";
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Наши комнаты</h2>
+                    <div class="bt-option">
+                        <a asp-controller="Home" asp-action="Index">Главная</a>
+                        <span>Комнаты</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="rooms-section spad">
+    <div class="container">
+        <div class="row">
+            @foreach (var room in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item">
+                        <img src="~/@room.Category.Photo" alt="...">
+                        <div class="ri-text">
+                            <h4>@room.Category.Name</h4>
+                            <h3>от @room.Category.TariffAdmins.Min(t => t.Price) Р<span class="room-price">/Цена за 1 ночь</span></h3>
+                            <partial name="_RoomCardPartial" model="room" />
+                            <a asp-controller="Home" asp-action="@room.Category.Path" class="primary-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

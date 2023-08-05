@@ -1,0 +1,63 @@
+﻿@model IEnumerable<HotelWebsiteBooking.Models.Entity.RoomDate>
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Наши свободные комнаты</h2>
+                    <div class="bt-option">
+                        <a asp-controller="Home" asp-action="Index">Главная</a>
+                        <span>Комнаты</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="rooms-section spad">
+    <div class="container">
+        <div class="row">
+            @foreach (var date in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item">
+                        <img src="~/@date.Room.Category.Photo" alt="...">
+                        <div class="ri-text">
+                            <h4>@date.Room.Category.Name</h4>
+                            <h3>от @(date.Room.Category.TariffAdmins.Min(t => t.Price) * ViewBag.Days) Р<span class="room-price">/Цена за @ViewBag.Days ночи</span></h3>
+                            <partial name="_RoomCardPartial" model="date.Room" />
+                            <a asp-controller="Home" asp-action="@date.Room.Category.Path" class="primary-btn">Подробнее</a>
+                            <br>
+                            <div class="top-nav">
+                                <div class="tn-right">
+                                    <a asp-controller="Room" asp-action="Tariff" asp-route-id="@date.RoomId" class="bk-btn">Выбрать</a>
+                                </div>
+                            </div>
+                            @*<div class="top-nav">
+                                <div class="col-lg-6">
+                                    <div class="tn-right">
+                                        <a asp-controller="Room" asp-action="Tariff" asp-route-id="@date.RoomId" class="bk-btn">Выбрать</a>
+                                    </div>
+                                </div>
+                        </div>
+                            <div class="room-details-item">
+                                <div class="rd-text">
+                                    <div class="rd-title">
+                                        <div class="rdt-right">
+                                            <a asp-controller="Room" asp-action="Tariff" asp-route-id="@date.RoomId">Выбрать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

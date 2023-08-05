@@ -1,12 +1,16 @@
 ﻿using HotelAdmin.Models;
 using HotelAdmin.Models.Entity;
 using Microsoft.EntityFrameworkCore;
+using System.Text;
+using System;
+using HotelAdmin.Service.EmailService;
 
 namespace HotelAdmin.Service.OrderService
 {
     public class DbDaoOrderPay : IDaoOrderPay
     {
         private readonly AppDbContext _context;
+        private readonly IEmailSender _emailSender;
 
         public DbDaoOrderPay(AppDbContext context)
         {
@@ -70,6 +74,27 @@ namespace HotelAdmin.Service.OrderService
             _context.Update(order);
             await _context.SaveChangesAsync();
             return true;
+        }
+
+        public async Task<bool> BookingSendAsync(Guid id)
+        {
+            await _context.Clients.LoadAsync();
+            OrderPay order = await GetAsync(id);
+            /*Subscriber personContains = _context.Subscribers.FirstOrDefault(x => x.Email == person.Email);
+            if (personContains == null)
+            {
+                person.Date = DateTime.Now;
+                _context.Subscribers.AddAsync(person);
+                await _context.SaveChangesAsync();*/
+                StringBuilder stringBuilder = new StringBuilder();
+                stringBuilder.Append($"<h2>Поздравляем Вы подписаны на наши новости!</h2>");
+                await _emailSender.SendEmailAsync(order.Client.Email, "Подписка на новости", stringBuilder.ToString());
+                return true;
+            /*}
+            else return false;*/
+            /*_context.Update(order);
+            await _context.SaveChangesAsync();*/
+            //return true;
         }
     }
 }
