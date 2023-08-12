@@ -31,7 +31,7 @@
                             <h4>@room.Category.Name</h4>
                             <h3>от @room.Category.TariffAdmins.Min(t => t.Price) Р<span class="room-price">/Цена за 1 ночь</span></h3>
                             <partial name="_RoomCardPartial" model="room" />
-                            <a asp-controller="Home" asp-action="@room.Category.Path" class="primary-btn">Подробнее</a>
+                            <a asp-controller="Home" asp-action="@room.Category.Path" asp-route-idRoom="@room.Id" class="primary-btn">Подробнее</a>
                         </div>
                     </div>
                 </div>

@@ -26,5 +26,18 @@ namespace HotelWebsiteBooking.Service.CommentService
             await _context.Comments.AddAsync(comment);
             await _context.SaveChangesAsync();
         }
+
+        public async Task AddCommentAsync(string name, string email, string content)
+        {
+            var comment = new Comment
+            {
+                Name = name,
+                Email = email,
+                Content = content,
+                Date = DateTime.Now,
+            };
+            await _context.Comments.AddAsync(comment);
+            await _context.SaveChangesAsync();
+        }
     }
 }

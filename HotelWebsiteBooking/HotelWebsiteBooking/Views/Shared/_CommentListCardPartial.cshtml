@@ -1,0 +1,20 @@
+﻿@model IEnumerable<HotelWebsiteBooking.Models.Entity.Comment>
+
+<div class="rd-reviews">
+    <h4>Комментарии</h4>
+    @foreach (var item in @Model)
+    {
+        <div class="review-item">
+            <div class="ri-pic">
+                <img src="~/img/room/avatar/avatar.gif" alt="Фото">
+            </div>
+            <div class="ri-text">
+                <span>@item.Date.ToLongDateString()</span>
+                <h5>@item.Name</h5>
+                <p>
+                    @item.Content
+                </p>
+            </div>
+        </div>
+    }    
+</div>

@@ -121,5 +121,15 @@ namespace HotelWebsiteBooking.Service.RoomService
                         .Select(r => r.First())
                         .ToList();
         }
+        
+        public async Task<Room> GetRoomAsync(int? id)
+        {
+            await _context.Categorys.LoadAsync();
+            await _context.TariffAdmins.LoadAsync();
+            var room = await _context.Rooms
+                .SingleOrDefaultAsync(m => m.Id == id);
+
+            return room;
+        }
     }
 }

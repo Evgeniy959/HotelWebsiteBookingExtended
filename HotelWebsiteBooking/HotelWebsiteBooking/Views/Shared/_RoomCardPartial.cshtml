@@ -1,18 +1,41 @@
 ﻿@model HotelWebsiteBooking.Models.Entity.Room
 
-<table>
-    <tbody>
-        <tr>
-            <td class="r-o">Число гостей:</td>
-            <td>@ViewBag.Guest</td>
-        </tr>
-        <tr>
-            <td class="r-o">Вместимость:</td>
-            <td>до @Model.Category.PersonsCount мест</td>
-        </tr>
-        <tr>
-            <td class="r-o">Площадь:</td>
-            <td>@Model.Category.Square</td>
-        </tr>
-    </tbody>
-</table>
+@if (ViewBag.Guest != null)
+{
+    <table>
+        <tbody>
+            <tr>
+                <td class="r-o">Число гостей:</td>
+                <td>@ViewBag.Guest</td>
+            </tr>
+            <tr>
+                <td class="r-o">Вместимость:</td>
+                <td>до @Model.Category.PersonsCount мест</td>
+            </tr>
+            <tr>
+                <td class="r-o">Площадь:</td>
+                <td>@Model.Category.Square</td>
+            </tr>
+        </tbody>
+    </table>
+}
+else
+{
+    <table>
+        <tbody>
+            <tr>
+                <td class="r-o">Вместимость:</td>
+                <td>до @Model.Category.PersonsCount мест</td>
+            </tr>
+            <tr>
+                <td class="r-o">Площадь:</td>
+                <td>@Model.Category.Square</td>
+            </tr>
+            <tr>
+                <td class="r-o">Сервис:</td>
+                <td>Wi-Fi, кондиционер, телевизор, ванная...</td>
+            </tr>
+        </tbody>
+    </table>
+
+}

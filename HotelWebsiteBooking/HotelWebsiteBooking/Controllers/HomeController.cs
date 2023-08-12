@@ -1,5 +1,7 @@
 ﻿using HotelWebsiteBooking.Models;
 using HotelWebsiteBooking.Models.Entity;
+using HotelWebsiteBooking.Service.DateService;
+using HotelWebsiteBooking.Service.RoomService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Stripe;
@@ -11,11 +13,15 @@ namespace HotelWebsiteBooking.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly AppDbContext _context;
+        private readonly IDaoRoom _daoRoom;
+        private readonly DaoDate _date;
 
-        public HomeController(ILogger<HomeController> logger, AppDbContext context)
+        public HomeController(ILogger<HomeController> logger, AppDbContext context, IDaoRoom daoRoom, DaoDate date)
         {
             _logger = logger;
             _context = context;
+            _daoRoom = daoRoom;
+            _date = date;
         }
 
         public IActionResult Index()
@@ -39,9 +45,15 @@ namespace HotelWebsiteBooking.Controllers
             return View();
         }
 
-        public IActionResult Standard()
-        {
-            return View();
+        public IActionResult Standard(int? idRoom, int? roomId)
+        {            
+            if (roomId!=null) 
+            {
+                ViewBag.Days = _date.end.Subtract(_date.start).Days;
+                ViewData["Messege"] = "Booking";
+                return View(_daoRoom.GetRoomAsync(roomId).Result);
+            }
+            return View(_daoRoom.GetRoomAsync(idRoom).Result);
         }
 
         public IActionResult StandardBig()

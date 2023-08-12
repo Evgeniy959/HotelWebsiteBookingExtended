@@ -99,7 +99,7 @@ namespace HotelWebsiteBooking.Controllers
             {
                 ViewBag.Price = price;
                 ViewBag.Сontent = content;
-                ViewBag.Email = client.Email;
+                //ViewBag.Email = client.Email;
                 return View("Pay", client);
             }
             else if (payment == "inPlace")

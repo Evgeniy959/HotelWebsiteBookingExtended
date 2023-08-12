@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hh156lUjQlj/wdBBwlFcnK7s2NM5FhLB3u3HiyHKopw=",
+  "Hash": "9ZhT9sbMXlAXXZQM3zAbLmFQL083EDMylm9pFJrbor8=",
   "Source": "HotelWebsiteBooking",
   "BasePath": "_content/HotelWebsiteBooking",
   "Mode": "Default",
@@ -1309,12 +1309,12 @@
       "OriginalItemSpec": "wwwroot\\img\\play.png"
     },
     {
-      "Identity": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\room\\Microsoft.AspNetCore.Http.FormFile",
+      "Identity": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\room\\avatar\\avatar.gif",
       "SourceId": "HotelWebsiteBooking",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\",
       "BasePath": "_content/HotelWebsiteBooking",
-      "RelativePath": "img/room/Microsoft.AspNetCore.Http.FormFile",
+      "RelativePath": "img/room/avatar/avatar.gif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1323,7 +1323,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\room\\Microsoft.AspNetCore.Http.FormFile"
+      "OriginalItemSpec": "wwwroot\\img\\room\\avatar\\avatar.gif"
     },
     {
       "Identity": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\room\\room-details.jpg",

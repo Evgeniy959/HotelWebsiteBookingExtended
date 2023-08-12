@@ -1,0 +1,27 @@
+﻿@model HotelWebsiteBooking.Models.Entity.Room
+
+<h5><strong>Написать комментарий</strong></h5>
+<br />
+<form asp-action="CreateComment" asp-controller="Comment" method="post" class="ra-form">
+    <div class="row">
+        <div class="col-lg-6">
+            <input required name="name" type="text" placeholder="Name*">
+        </div>
+        <div class="col-lg-6">
+            <input required name="email" type="text" placeholder="Email*">
+        </div>
+        <input type="hidden" name="PostTitle" value="@ViewData["Title"]" />
+        @if (ViewData["Messege"] != null)
+        {
+            <input type="hidden" name="rId" value="@Model?.Id" />
+        }
+        else
+        {
+            <input type="hidden" name="idR" value="@Model?.Id" />
+        }
+        <div class="col-lg-12">
+            <textarea required name="content" placeholder="Ваши коментарии"></textarea>
+            <button type="submit">Отправить</button>
+        </div>
+    </div>
+</form>

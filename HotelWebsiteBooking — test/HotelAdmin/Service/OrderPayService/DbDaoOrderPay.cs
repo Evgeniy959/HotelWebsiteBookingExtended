@@ -311,6 +311,10 @@ namespace HotelAdmin.Service.OrderService
                                        <td>{order.GuestCount}</td>
                                    </tr>
                                    <tr>
+                                       <td>Количество ночей:</td>
+                                       <td>{order.Client.End.Subtract(order.Client.Start).Days}</td>
+                                   </tr>
+                                   <tr>
                                        <td>Дата заезда:</td>
                                        <td>{order.Client.Start.ToLongDateString()} с 12:00</td>
                                    </tr>
