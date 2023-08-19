@@ -10,9 +10,13 @@ using HotelAdmin.Models.Entity;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using HotelAdmin.Helpers;
 using HotelAdmin.Service.RoomService;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
+using System.Security.Claims;
 
 namespace HotelAdmin.Controllers
 {
+    //[Authorize(Roles = "Administrator")]
     public class RoomController : Controller
     {
         private readonly AppDbContext _context;
@@ -23,12 +27,14 @@ namespace HotelAdmin.Controllers
             _context = context;
             _daoRoom = daoRoom;
         }
-
+        //[Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Index(int page = 1)
         {
             ViewBag.TotalPages = Math.Ceiling((await _context.Rooms.ToListAsync()).Count / 10.0);
             ViewBag.CurrentPage = page;
-
+            var login = HttpContext.User.FindFirst(ClaimsIdentity.DefaultNameClaimType);
+            var role = HttpContext.User.FindFirst(ClaimsIdentity.DefaultRoleClaimType);
+            Console.WriteLine($"Name: {login?.Value}\nRole: {role?.Value}");
             return View(_daoRoom.IndexAsync(page).Result);
         }
 
@@ -53,16 +59,13 @@ namespace HotelAdmin.Controllers
         public IActionResult Add(Room room, RoomDate date)
         {
             if (ModelState.IsValid && _daoRoom.AddAsync(room, date).Result == true)
-            {               
+            {
+                TempData["Success"] = "Комната УСПЕШНО добавлена!";
                 return RedirectToAction("Index");
             }
-            //else
-            //{
-                ViewBag.Categorys = new SelectList(_context.Categorys, "Id", "Name", room.CategoryId);
-                TempData["Status"] = "Room exsist!";
-                return View(room);
-            //}
-            
+            ViewBag.Categorys = new SelectList(_context.Categorys, "Id", "Name", room.CategoryId);
+            TempData["Error"] = "Комната уже существует или ошибка добавления!";
+            return View(room);
         }
 
         public IActionResult Edit(int id)

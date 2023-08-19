@@ -72,9 +72,17 @@ namespace HotelAdmin.Service.ClientService
 
         public async Task<bool> UpdateAsync(Client client)
         {
-            _context.Update(client);
-            await _context.SaveChangesAsync();
-            return true;
+            try 
+            {
+                _context.Update(client);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
         }
 
     }

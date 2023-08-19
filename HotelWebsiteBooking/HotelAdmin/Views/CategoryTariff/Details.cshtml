@@ -12,34 +12,34 @@
     </div>
     <div class="col-md-6">
     <dl class="row">            
-        <dt class="col-sm-4 info-sise">
+        <dt class="col-sm-4 delete-sise">
                 Категория:
         </dt>
-        <dd class="col-sm-8 info-sise">
+        <dd class="col-sm-8 delete-sise">
             @Html.DisplayFor(model => model.Category.Name)
         </dd>
-        <dt class="col-sm-4 info-sise">
+        <dt class="col-sm-4 delete-sise">
                 Количество мест:
         </dt>
-            <dd class="col-sm-8 info-sise">
+        <dd class="col-sm-8 delete-sise">
             @Html.DisplayFor(model => model.Category.PersonsCount)
         </dd>
-        <dt class="col-sm-4 info-sise">
+        <dt class="col-sm-4 delete-sise">
             Площадь:
         </dt>
-            <dd class="col-sm-8 info-sise">
+        <dd class="col-sm-8 delete-sise">
             @Html.DisplayFor(model => model.Category.Square)
         </dd>
-        <dt class="col-sm-4 info-sise">
+        <dt class="col-sm-4 delete-sise">
             Тарифный план:
         </dt>
-        <dd class="col-sm-8 info-sise">
+        <dd class="col-sm-8 delete-sise">
             @Html.DisplayFor(model => model.TariffPlan.Description)
         </dd>
-        <dt class="col-sm-4 info-sise">
+        <dt class="col-sm-4 delete-sise">
             Цена:
         </dt>
-        <dd class="col-sm-8 info-sise">
+        <dd class="col-sm-8 delete-sise">
             @Html.DisplayFor(model => model.Price)
         </dd>
     </dl>
@@ -48,5 +48,5 @@
 <br />
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-secondary">Edit</a>
-    <a asp-action="Index" class="btn btn-info">Back to List</a>
+    <a asp-action="Index" class="btn btn-info">К списку</a>
 </div>

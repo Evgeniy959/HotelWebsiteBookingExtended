@@ -1,0 +1,12 @@
+﻿<script type="text/javascript">
+    $(document).ready(function () {
+    @if (TempData.ContainsKey("Success"))
+    {
+        @:toastr.success("@TempData["Success"]");
+    }
+    else if (TempData.ContainsKey("Error"))
+    {
+        @:toastr.error("@TempData["Error"]");
+    }
+                                        });
+</script>

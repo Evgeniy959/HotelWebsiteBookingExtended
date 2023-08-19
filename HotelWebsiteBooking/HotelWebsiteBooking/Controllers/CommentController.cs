@@ -34,25 +34,10 @@ namespace HotelWebsiteBooking.Controllers
         // POST: CommentController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CreateComment(string name, string email, string content, int? idR, int? rId)
+        public ActionResult CreateComment(string name, string email, string content, string title, int? idR, int? rId)
         {
-            _comment.AddCommentAsync(name, email, content);
-            //return Redirect("/Home/Standard");
-            //return Redirect("/Home/Index");
+            _comment.AddCommentAsync(name, email, content, title);
             return RedirectToAction("Standard", "Home", new { idRoom = idR, roomId = rId });
-            /*try
-            {
-                _comment.AddCommentAsync(name, email, content);
-                return Redirect("/Home/Index");
-                //throw new Exception();
-                //return RedirectToAction(nameof(Index));                
-            }
-            catch
-            //catch(Exception)
-            {
-                //return Redirect("/Home/Index");
-                return View();
-            }*/
         }
 
         // GET: CommentController/Edit/5

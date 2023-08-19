@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HotelAdmin.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/toastr.js/toastr.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/toastr.js/toastr.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/chosen/chosen.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/chosen/chosen.min.css" asp-append-version="true" />
 </head>
@@ -17,23 +19,32 @@
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        @if (User.IsInRole("Administrator"))
+                        {
+                            <li><a class="dropdown-item" asp-controller="Room" asp-action="Index">Rooms</a></li>
+                            <li><a class="dropdown-item" asp-controller="Category" asp-action="Index">Category </a></li>
+                            <li><a class="dropdown-item" asp-controller="CategoryTariff" asp-action="Index">TariffAdmins </a></li>
+                            <li><a class="dropdown-item" asp-controller="TariffPlan" asp-action="Index">TariffPlans </a></li>
+
+                        }
                         <li class="nav-item dropdown">
                             <a class="navbar-brand dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Таблицы
+                                Заказы
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-controller="Room" asp-action="Index">Rooms</a></li>
-                                <li><a class="dropdown-item" asp-controller="Category" asp-action="Index">Category </a></li>
-                                <li><a class="dropdown-item" asp-controller="CategoryTariff" asp-action="Index">TariffAdmins </a></li>
-                                <li><a class="dropdown-item" asp-controller="TariffPlan" asp-action="Index">TariffPlans </a></li>
-                                <li><a class="dropdown-item" asp-controller="Client" asp-action="Index">Clients</a></li>
+                                
                                 <li><a class="dropdown-item" asp-controller="OrderPay" asp-action="Index">OrderPays</a></li>
                                 <li><a class="dropdown-item" asp-controller="Order" asp-action="Index">Orders</a></li>
-                                <li><a class="dropdown-item" asp-controller="RoomDate" asp-action="Index">Dates</a></li>
-                                <li><a class="dropdown-item" asp-controller="Subscriber" asp-action="Index">Subscribers</a></li>
-                                <li><a class="dropdown-item" asp-controller="Comment" asp-action="Index">Comments</a></li>
                             </ul>
                         </li>
+                        @if (User.IsInRole("Administrator"))
+                        {
+                            <li><a class="dropdown-item" asp-controller="Client" asp-action="Index">Clients</a></li>
+                            <li><a class="dropdown-item" asp-controller="RoomDate" asp-action="Index">Dates</a></li>
+                            <li><a class="dropdown-item" asp-controller="Subscriber" asp-action="Index">Subscribers</a></li>
+                            <li><a class="dropdown-item" asp-controller="Comment" asp-action="Index">Comments</a></li>
+
+                        }
                         <li class="nav-item">
                             <a class="navbar-brand text-dark" asp-area="" asp-controller="Home" asp-action="LogOut">Выход</a>
                         </li>
@@ -57,6 +68,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/lib/chosen/chosen.jquery.js" asp-append-version="true"></script>
+    <script src="~/lib/toastr.js/toastr.min.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

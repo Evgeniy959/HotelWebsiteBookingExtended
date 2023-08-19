@@ -225,6 +225,10 @@
       "PackagePath": "staticwebassets\\img\\blog\\blog-wide.jpg"
     },
     {
+      "Id": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\cart.png",
+      "PackagePath": "staticwebassets\\img\\cart.png"
+    },
+    {
       "Id": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\flag.jpg",
       "PackagePath": "staticwebassets\\img\\flag.jpg"
     },
@@ -329,12 +333,16 @@
       "PackagePath": "staticwebassets\\img\\room\\room-sb.jpg"
     },
     {
-      "Id": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\room\\room-sbi.jpeg",
-      "PackagePath": "staticwebassets\\img\\room\\room-sbi.jpeg"
+      "Id": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\room\\room-sbi.jpg",
+      "PackagePath": "staticwebassets\\img\\room\\room-sbi.jpg"
     },
     {
       "Id": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\room\\room-si.jpeg",
       "PackagePath": "staticwebassets\\img\\room\\room-si.jpeg"
+    },
+    {
+      "Id": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\room\\room1-sbi.jpeg",
+      "PackagePath": "staticwebassets\\img\\room\\room1-sbi.jpeg"
     },
     {
       "Id": "D:\\Study-11.02.2023\\Study\\Диплом\\Проекты\\HotelWebsiteBookingExtended\\HotelWebsiteBooking\\HotelWebsiteBooking\\wwwroot\\img\\rus-1.png",

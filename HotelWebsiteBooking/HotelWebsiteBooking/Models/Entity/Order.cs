@@ -6,11 +6,11 @@ namespace HotelWebsiteBooking.Models.Entity
     public class Order
     {
         [Key]
-        [Column("Number")]
         public Guid Id { get; set; }
         public int ClientId { get; set; }
         public int GuestCount { get; set; }
         public string Status { get; set; }
+        public string? BookingNumber { get; set; }
         public DateTime Date { get; set; }
 
         public Client? Client { get; set; }
@@ -18,6 +18,7 @@ namespace HotelWebsiteBooking.Models.Entity
         public Order()
         {
             Status = string.Empty;
+            BookingNumber = string.Empty;
         }
     }
 }

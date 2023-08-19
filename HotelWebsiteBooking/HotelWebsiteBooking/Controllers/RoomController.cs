@@ -113,7 +113,7 @@ namespace HotelWebsiteBooking.Controllers
             //else
             //{
                 TempData["Status"] = "Неудачное бронирование, попробуйте еще раз!";
-                return View("Booking", client);
+                return RedirectToAction("Booking", client);
             //}
             //return View("Booking", client);
         }

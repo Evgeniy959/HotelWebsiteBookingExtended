@@ -75,5 +75,16 @@ namespace HotelAdmin.Controllers
             await _daoOrder.DeleteConfirmedAsync(id);
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> BookingSend(Guid id)
+        {
+            if (await _daoOrder.BookingSendAsync(id) == true)
+            {
+                TempData["Success"] = "Бронь УСПЕШНО отправлена!";
+                return RedirectToAction(nameof(Index));
+            }
+            TempData["Error"] = "Что то пошло не так бронь не отправлена!";
+            return RedirectToAction("Details", new { id = id });
+        }
     }
 }

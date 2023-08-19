@@ -10,6 +10,8 @@ namespace HotelAdmin.Models.Entity
         [MaxLength(255)]
         public string Email { get; set; }
         public string Content { get; set; }
+        [MaxLength(255)]
+        public string? Title { get; set; }
         public DateTime Date { get; set; }
 
         public Comment()
@@ -17,6 +19,7 @@ namespace HotelAdmin.Models.Entity
             Name = "";
             Email = "";
             Content = "";
+            Title = "";
             Date = DateTime.Now;
 
         }

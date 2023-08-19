@@ -45,7 +45,7 @@
             @foreach (var item in Model.Category.TariffAdmins)
             {
                 <div class="col-lg-3 col-md-6">
-                    <div class="room-item" style="height:130%;">
+                    <div class="room-item">
                         <div class="ri-text">
                             <div class="col-lg-2">
                                 <div class="breadcrumb-text">
@@ -56,7 +56,7 @@
                             </div>
                             <br>
                             <h4>@item.TariffPlan.Description</h4>
-                            <h3>@(item.Price * ViewBag.Days) Р<span class="room-price">/Цена за @ViewBag.Days ночи</span></h3>
+                            <h3>@(item.Price * ViewBag.Days) Р<span class="room-price">/@ViewBag.Days ночи</span></h3>
                             <br>
                             <div class="top-nav">
                                 <div class="tn-right">

@@ -8,5 +8,6 @@ namespace HotelAdmin.Service.OrderService
         Task<Order> GetAsync(Guid id);
         Task DeleteConfirmedAsync(Guid id);
         Task<bool> UpdateAsync(Order order);
+        Task<bool> BookingSendAsync(Guid id);
     }
 }

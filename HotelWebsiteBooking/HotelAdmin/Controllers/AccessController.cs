@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using HotelAdmin.Models.Entity;
+using System;
 
 namespace HotelAdmin.Controllers
 {
@@ -27,21 +28,28 @@ namespace HotelAdmin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(Admin admin)
+        public async Task<IActionResult> Login(LoginModel loginModel)
         {
-            var adminDb = await _context.Admins.FirstOrDefaultAsync(a => a.Email == admin.Email);
-            if (adminDb != null)
+            var modelDb = await _context.LoginModels.FirstOrDefaultAsync(a => a.Email == loginModel.Email);
+            if (modelDb != null)
             {
-                bool validPassword = BCrypt.Net.BCrypt.Verify(admin.Password, adminDb.Password);
+                bool validPassword = BCrypt.Net.BCrypt.Verify(loginModel.Password, modelDb.Password);
                 if (validPassword)
                 {
-                    var claims = new List<Claim> { new Claim(ClaimTypes.Name, admin.Email) };
-                    ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "Cookies");
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimsIdentity.DefaultNameClaimType, modelDb.Email),
+                        new Claim(ClaimsIdentity.DefaultRoleClaimType, modelDb.Role.ToString())
+                        /*new Claim(ClaimTypes.Name, loginModel.Email),
+                        new Claim(ClaimTypes.Role, loginModel.Role.ToString())*/
+                    };
+                    //var claims = new List<Claim> { new Claim(ClaimTypes.Name, admin.Email) };
+                    ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "AppCookies", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
                     return RedirectToAction("Index", "Home");
                 }
             }
-            ViewData["ValidateMessege"] = "Invalid Email of Password";
+            ViewData["ValidateMessege"] = "Invalid Email or Password";
             return View();
             
         }

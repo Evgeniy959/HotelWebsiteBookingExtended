@@ -29,6 +29,37 @@ body {
     background-color: snow;
 }
 
+.details {
+    background-color: snow;
+    width: 55%;
+    margin: 20px auto;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+.list-center {
+    margin: 10px auto;
+}
+
+.delete {
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: snow;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.delete-photo {
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: snow;
+    width: 50%;
+}
+
+.photo-col {
+    color: navy;
+}
+
 .nav {
     background-color: whitesmoke;
 }
@@ -45,6 +76,10 @@ body {
     background-color: black;
 }
 .info-sise {
+    font-size: 16px;
+}
+
+.delete-sise {
     font-size: 20px;
 }
 

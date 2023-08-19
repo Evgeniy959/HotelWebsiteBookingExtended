@@ -17,8 +17,8 @@ namespace HotelAdmin.Service.EmailService
         {
             var emailMessage = new MimeMessage();
 
-            emailMessage.From.Add(new MailboxAddress("News Admin", "evgpilipenkoY@yandex.ru"));
-            emailMessage.To.Add(new MailboxAddress("News Client", email));
+            emailMessage.From.Add(new MailboxAddress("Hotel Admin", "evgpilipenkoY@yandex.ru"));
+            emailMessage.To.Add(new MailboxAddress("New Client", email));
             emailMessage.Subject = subject;
 
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
@@ -36,20 +36,5 @@ namespace HotelAdmin.Service.EmailService
             }
         }
 
-        /*public async Task<bool> SubscribeAsync(Subscriber person)
-        {
-            Subscriber personContains = _context.Subscribers.FirstOrDefault(x => x.Email == person.Email);
-            if (personContains == null)
-            {
-                person.Date = DateTime.Now;
-                _context.Subscribers.AddAsync(person);
-                await _context.SaveChangesAsync();
-                StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder.Append($"<h2>Поздравляем Вы подписаны на наши новости!</h2>");
-                await SendEmailAsync(person.Email, "Подписка на новости", stringBuilder.ToString());
-                return true;
-            }
-            else return false;
-        }*/
     }
 }

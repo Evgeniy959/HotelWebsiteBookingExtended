@@ -19,19 +19,24 @@ namespace HotelAdmin.Service.RoomService
         
         public async Task<bool> AddAsync(Room room, RoomDate date)
         {
-            var roomExsist = await _context.Rooms.FirstOrDefaultAsync(x => x.Number == room.Number);
-            if (roomExsist == null) 
+            try 
             {
-                await _context.AddAsync(room);
-                await _context.SaveChangesAsync();
-                date.RoomId = room.Id;
-                await _context.AddAsync(date);
-                await _context.SaveChangesAsync();
-                return true;
+                var roomExsist = await _context.Rooms.FirstOrDefaultAsync(x => x.Number == room.Number);
+                if (roomExsist == null)
+                {
+                    await _context.AddAsync(room);
+                    await _context.SaveChangesAsync();
+                    date.RoomId = room.Id;
+                    await _context.AddAsync(date);
+                    await _context.SaveChangesAsync();
+                    return true;
+                }
+                return false;
             }
-            return false;
-            
-
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public async Task DeleteConfirmedAsync(int id)

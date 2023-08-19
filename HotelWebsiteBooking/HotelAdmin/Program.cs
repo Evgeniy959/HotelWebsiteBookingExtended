@@ -1,4 +1,5 @@
 using HotelAdmin.Models;
+using HotelAdmin.Service.BookingService;
 using HotelAdmin.Service.CategoryService;
 using HotelAdmin.Service.CategoryTariffService;
 using HotelAdmin.Service.ClientService;
@@ -29,6 +30,7 @@ builder.Services.AddTransient<IDaoOrderPay, DbDaoOrderPay>();
 builder.Services.AddTransient<IDaoRoomDate, DbDaoRoomDate>();
 builder.Services.AddTransient<IDaoComment, DbDaoComment>();
 builder.Services.AddTransient<IDaoSubscriber, DbDaoSubscriber>();
+builder.Services.AddTransient<IDaoBooking, DbDaoBooking>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -38,6 +40,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options => { 
         options.LoginPath = "/Access/Login";
+        options.AccessDeniedPath = "/Access/Login";
         options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
     });
 builder.Services.AddAuthorization();

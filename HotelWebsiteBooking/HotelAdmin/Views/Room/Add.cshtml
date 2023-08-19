@@ -4,13 +4,6 @@
     ViewData["Title"] = "Add";
 }
 
-@if (TempData.ContainsKey("Status"))
-{
-    <div class="alert alert-danger" role="alert">
-        <strong>Notification!</strong> @TempData["Status"]
-    </div>
-}
-
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-3">
@@ -36,10 +29,10 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-6">
-                                    <input type="submit" class="form-control btn btn-primary" value="Add room" />
+                                    <input type="submit" class="form-control btn btn-primary" value="Добавить" />
                                 </div>
                                 <div class="col-6">
-                                    <a asp-action="Index" asp-controller="Room" class="form-control btn btn-info">Back to List</a>
+                                    <a asp-action="Index" asp-controller="Room" class="form-control btn btn-info">К списку</a>
                                 </div>
                             </div>
                         </div>
@@ -52,6 +45,10 @@
 
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        <script src="~/lib/toastr.js/toastr.min.js"></script>
+        await Html.RenderPartialAsync("_ToastPartial");
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
     
 }

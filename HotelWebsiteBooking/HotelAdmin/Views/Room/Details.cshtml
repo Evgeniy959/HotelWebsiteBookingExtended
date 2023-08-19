@@ -10,36 +10,36 @@
     <div class="col-md-6">
         <img src="~/@Html.DisplayFor(model => model.Category.Photo)" alt="Photo" style="height: 350px;">
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 photo-col">
         <dl class="row">
-            <dt class="col-sm-4 info-sise">
+            <dt class="col-sm-4 delete-sise">
                 Номер:
             </dt>
-            <dd class="col-sm-8 info-sise">
+            <dd class="col-sm-8 delete-sise">
                 @Html.DisplayFor(model => model.Number)
             </dd>
-            <dt class="col-sm-4 info-sise">
+            <dt class="col-sm-4 delete-sise">
                 Категория:
             </dt>
-            <dd class="col-sm-8 info-sise">
+            <dd class="col-sm-8 delete-sise">
                 @Html.DisplayFor(model => model.Category.Name)
             </dd>            
-            <dt class="col-sm-4 info-sise">
+            <dt class="col-sm-4 delete-sise">
                 Количество мест:
             </dt>
-            <dd class="col-sm-8 info-sise">
+            <dd class="col-sm-8 delete-sise">
                 @Html.DisplayFor(model => model.Category.PersonsCount)
             </dd>
-            <dt class="col-sm-4 info-sise">
+            <dt class="col-sm-4 delete-sise">
                 Площадь:
             </dt>
-            <dd class="col-sm-8 info-sise">
+            <dd class="col-sm-8 delete-sise">
                 @Html.DisplayFor(model => model.Category.Square)
             </dd>
-            <dt class="col-sm-4 info-sise">
+            <dt class="col-sm-4 delete-sise">
                 Цена от:
             </dt>
-            <dd class="col-sm-8 info-sise">
+            <dd class="col-sm-8 delete-sise">
                 @Model.Category.TariffAdmins.Min(t => t.Price)
             </dd>
         </dl>
@@ -47,6 +47,6 @@
 </div>
 <br/>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-secondary">Edit</a>
-    <a asp-action="Index" class="btn btn-info">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-secondary">Изменить</a>
+    <a asp-action="Index" class="btn btn-info">К списку</a>
 </div>

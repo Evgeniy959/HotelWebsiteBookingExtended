@@ -4,10 +4,17 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+@if (TempData.ContainsKey("Error"))
+{
+    <div class="alert alert-danger" role="alert">
+        <strong>Notification!</strong> @TempData["Error"]
+    </div>
+}
+<div class="details">
+<h2>Детали бронирования</h2>
 <hr />
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
         <dl class="row">
             <dt class="col-sm-4 info-sise">
                 Номер заказа:
@@ -15,8 +22,17 @@
             <dd class="col-sm-8 info-sise">
                 @Html.DisplayFor(model => model.Id)
             </dd>
+            @if (Model.BookingNumber!="")
+            {
+                <dt class="col-sm-4 info-sise">
+                    Номер брони:
+                </dt>
+                <dd class="col-sm-8 info-sise">
+                    @Model.BookingNumber
+                </dd>    
+            }
             <dt class="col-sm-4 info-sise">
-                Дата заказа:
+                Дата:
             </dt>
             <dd class="col-sm-8 info-sise">
                 @Html.DisplayFor(model => model.Date)
@@ -46,7 +62,7 @@
                 @Html.DisplayFor(model => model.Client.Surname)
             </dd>
             <dt class="col-sm-4 info-sise">
-                Почта:
+                Email:
             </dt>
             <dd class="col-sm-8 info-sise">
                 @Html.DisplayFor(model => model.Client.Email)
@@ -61,13 +77,13 @@
                 Дата заезда:
             </dt>
             <dd class="col-sm-8 info-sise">
-                @Html.DisplayFor(model => model.Client.Start)
+                @Model.Client.Start.ToLongDateString()
             </dd>
             <dt class="col-sm-4 info-sise">
                 Дата выезда:
             </dt>
             <dd class="col-sm-8 info-sise">
-                @Html.DisplayFor(model => model.Client.End)
+                @Model.Client.End.ToLongDateString()
             </dd>
             <dt class="col-sm-4 info-sise">
                 Номер комнаты:
@@ -91,13 +107,21 @@
                 Цена:
             </dt>
             <dd class="col-sm-8 info-sise">
-                @Html.DisplayFor(model => model.Client.Tariff.Price)
+                @(Model.Client.End.Subtract(Model.Client.Start).Days*Model.Client.Tariff.Price) Р
             </dd>
         </dl>
     </div>
 </div>
 <br/>
 <div>
-    <a asp-action="BookingSend" asp-route-id="@Model.Id" class="btn btn-secondary">Edit</a>
-    <a asp-action="Index" class="btn btn-info">Back to List</a>
+    <a asp-action="BookingSend" asp-route-id="@Model.Id" class="btn btn-secondary">Отправить</a>
+    <a asp-action="Index" class="btn btn-info">К списку</a>
 </div>
+</div>
+@section Scripts {
+    @{
+        <script src="~/lib/toastr.js/toastr.min.js"></script>
+        await Html.RenderPartialAsync("_ToastPartial");
+    }
+
+}

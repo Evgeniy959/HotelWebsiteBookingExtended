@@ -4,6 +4,7 @@ using HotelAdmin.Service.OrderService;
 using HotelAdmin.Service.RoomDateService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
 
 namespace HotelAdmin.Controllers
 {
@@ -78,8 +79,13 @@ namespace HotelAdmin.Controllers
 
         public async Task<IActionResult> BookingSend(Guid id)
         {
-            await _daoOrder.BookingSendAsync(id);
-            return RedirectToAction(nameof(Index));
+            if (await _daoOrder.BookingSendAsync(id) == true)
+            {
+                TempData["Success"] = "Бронь УСПЕШНО отправлена!";
+                return RedirectToAction(nameof(Index));
+            }
+            TempData["Error"] = "Что то пошло не так бронь не отправлена!";            
+            return RedirectToAction("Details", new { id = id });
         }
     }
 }

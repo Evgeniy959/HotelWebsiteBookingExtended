@@ -30,12 +30,12 @@
             <td>@item.Surname</td>
             <td>@item.Email</td>
             <td>@item.Phone</td>
-            <td>@item.Start</td>
-            <td>@item.End</td>
+            <td>@item.Start.ToShortDateString()</td>
+            <td>@item.End.ToShortDateString()</td>
             
-            <td><div class="col-14"><a asp-action="Edit" asp-controller="Client" asp-route-id="@item.Id" class="form-control btn btn-secondary">Edit</a></div></td>
-            <td><div class="col-14"><a asp-action="Details" asp-controller="Client" asp-route-id="@item.Id" class="form-control btn btn-info">Details</a></div></td>
-            <td><div class="col-14"><a asp-action="Delete" asp-controller="Client" asp-route-id="@item.Id" class="form-control btn btn-danger">Delete</a></div></td>
+            <td><div class="col-14"><a asp-action="Edit" asp-controller="Client" asp-route-id="@item.Id" class="form-control btn btn-secondary">Изменить</a></div></td>
+            <td><div class="col-14"><a asp-action="Details" asp-controller="Client" asp-route-id="@item.Id" class="form-control btn btn-info">Подробно</a></div></td>
+            <td><div class="col-14"><a asp-action="Delete" asp-controller="Client" asp-route-id="@item.Id" class="form-control btn btn-danger">Удалить</a></div></td>
         </tr>
 }
     </tbody>

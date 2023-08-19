@@ -40,18 +40,24 @@ namespace HotelWebsiteBooking.Service.EmailService
 
         public async Task<bool> SubscribeAsync(Subscriber person)
         {
-            Subscriber personContains = _context.Subscribers.FirstOrDefault(x => x.Email == person.Email);
-            if (personContains == null)
+            try 
             {
-                person.Date = DateTime.Now;
-                _context.Subscribers.AddAsync(person);
-                await _context.SaveChangesAsync();
-                StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder.Append($"<h2>Поздравляем Вы подписаны на наши новости!</h2>");
-                await SendEmailAsync(person.Email, "Подписка на новости", stringBuilder.ToString());
-                return true;
+                /*Subscriber personContains = _context.Subscribers.FirstOrDefault(x => x.Email == person.Email);
+                if (personContains == null)
+                {*/
+                    person.Date = DateTime.Now;
+                    _context.Subscribers.AddAsync(person);
+                    await _context.SaveChangesAsync();
+                    StringBuilder stringBuilder = new StringBuilder();
+                    stringBuilder.Append($"<h2>Поздравляем Вы подписаны на наши новости!</h2>");
+                    await SendEmailAsync(person.Email, "Подписка на новости", stringBuilder.ToString());
+                    return true;
+                //}
             }
-            else return false;
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

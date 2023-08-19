@@ -54,12 +54,13 @@ namespace HotelAdmin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Client client)
+        public async Task<IActionResult> Edit([Bind("Id,RoomId,TariffId,Name,Surname,Email,Phone,Start,End")] Client client)
         {            
-            if (ModelState.IsValid && _daoClient.UpdateAsync(client).Result == true)
+            if (ModelState.IsValid && await _daoClient.UpdateAsync(client) == true)
             {
                 return RedirectToAction("Index");
             }
+            TempData["Error"] = "Ошибка изменения!";
             return View(client);
 
         }

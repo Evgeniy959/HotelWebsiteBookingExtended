@@ -22,48 +22,54 @@ namespace HotelWebsiteBooking.Service.RoomService
         }
         public async Task<bool> AddBookingAsync(RoomDate date, Client client, string content, Order order, OrderPay orderPay)
         {
-            client.Start = _date.start;
-            client.End = _date.end;
-            _context.Add(client);
-            await _context.SaveChangesAsync();
-            if (orderPay.Status == "оплачено")
+            try
             {
-                orderPay.ClientId = client.Id;
-                orderPay.GuestCount = _guest.GuestCount;
-                orderPay.Date = DateTime.Now;
-                _context.Add(orderPay);
-            }
-            else
-            {
-                order.ClientId = client.Id;
-                order.GuestCount = _guest.GuestCount;
-                order.Status = "без предоплаты";
-                order.Date = DateTime.Now;
-                _context.Add(order);
-            }
-            await _context.SaveChangesAsync();
-            date.Start = _date.start;
-            date.End = _date.end;
-            date.RoomId = client.RoomId;
-            date.ClientId = client.Id;
-            var roomDate = await _context.Dates.FirstOrDefaultAsync(x => x.Start == null && x.RoomId == client.RoomId);
-            if (roomDate != null)
-            {
-                roomDate.Start = _date.start;
-                roomDate.End = _date.end;
-                roomDate.ClientId = client.Id;
-                _context.Dates.Update(roomDate);
-            }
-            else _context.Dates.Add(date);
-            await _context.SaveChangesAsync();
+                client.Start = _date.start;
+                client.End = _date.end;
+                _context.Add(client);
+                await _context.SaveChangesAsync();
+                if (orderPay.Status == "оплачено")
+                {
+                    orderPay.ClientId = client.Id;
+                    orderPay.GuestCount = _guest.GuestCount;
+                    orderPay.Date = DateTime.Now;
+                    _context.Add(orderPay);
+                }
+                else
+                {
+                    order.ClientId = client.Id;
+                    order.GuestCount = _guest.GuestCount;
+                    order.Status = "без предоплаты";
+                    order.Date = DateTime.Now;
+                    _context.Add(order);
+                }
+                await _context.SaveChangesAsync();
+                date.Start = _date.start;
+                date.End = _date.end;
+                date.RoomId = client.RoomId;
+                date.ClientId = client.Id;
+                var roomDate = await _context.Dates.FirstOrDefaultAsync(x => x.Start == null && x.RoomId == client.RoomId);
+                if (roomDate != null)
+                {
+                    roomDate.Start = _date.start;
+                    roomDate.End = _date.end;
+                    roomDate.ClientId = client.Id;
+                    _context.Dates.Update(roomDate);
+                }
+                else _context.Dates.Add(date);
+                await _context.SaveChangesAsync();
 
-            if (content != null)
-            {
-                await _comment.AddCommentAsync(client, content);
+                if (content != null)
+                {
+                    await _comment.AddCommentAsync(client, content);
 
+                }
+                return true;
             }
-            return true;
-
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public async Task<List<Room>> RoomsAsync()

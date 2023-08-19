@@ -16,6 +16,7 @@
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <input type="hidden" asp-for="Id" />
                         <input type="hidden" asp-for="RoomId" />
+                        <input type="hidden" asp-for="TariffId" />
                         <div class="form-group">
                             <label asp-for="Name" class="control-label"></label>
                             <input asp-for="Name" class="form-control nav" />
@@ -50,10 +51,10 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-6">
-                                    <input type="submit" class="form-control btn btn-primary" value="Save" />
+                                    <input type="submit" class="form-control btn btn-primary" value="Сохранить" />
                                 </div>
                                 <div class="col-6">
-                                    <a asp-action="Index" asp-controller="Client" class="form-control btn btn-secondary">Сancel</a>
+                                    <a asp-action="Index" asp-controller="Client" class="form-control btn btn-secondary">Отменить</a>
                                 </div>
                             </div>
                         </div>
@@ -65,5 +66,8 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        <script src="~/lib/toastr.js/toastr.min.js"></script>
+        await Html.RenderPartialAsync("_ToastPartial");
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

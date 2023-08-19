@@ -22,27 +22,6 @@ namespace HotelAdmin.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("HotelAdmin.Models.Entity.Admin", b =>
-                {
-                    b.Property<string>("Email")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Email");
-
-                    b.ToTable("Admins");
-
-                    b.HasData(
-                        new
-                        {
-                            Email = "admin@mail.ru",
-                            Password = "$2a$11$rOCkPUBN/VBBK/cMyslZo.gIN7UJ/Y3Kba6l98id5FYuE/bnkr0D2"
-                        });
-                });
-
             modelBuilder.Entity("HotelAdmin.Models.Entity.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -56,7 +35,6 @@ namespace HotelAdmin.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Path")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("PersonsCount")
@@ -88,7 +66,7 @@ namespace HotelAdmin.Migrations
                         new
                         {
                             Id = 2,
-                            Name = "Стандарт с большой кроватью",
+                            Name = "Стандарт \"queen-size\"",
                             Path = "StandardBig",
                             PersonsCount = 2,
                             Photo = "img/room/room-sb.jpg",
@@ -97,7 +75,7 @@ namespace HotelAdmin.Migrations
                         new
                         {
                             Id = 3,
-                            Name = "Стандарт Улучшенный",
+                            Name = "Комфорт",
                             Path = "StandardGood",
                             PersonsCount = 2,
                             Photo = "img/room/room-si.jpeg",
@@ -106,7 +84,7 @@ namespace HotelAdmin.Migrations
                         new
                         {
                             Id = 4,
-                            Name = "Стандарт Улучшенный с большой кроватью",
+                            Name = "Комфорт \"queen-size\"",
                             Path = "StandardGoodBig",
                             PersonsCount = 2,
                             Photo = "img/room/room-sbi.jpeg",
@@ -162,56 +140,56 @@ namespace HotelAdmin.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            Price = 3600,
+                            Price = 3000,
                             TariffPlanId = 1
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 1,
-                            Price = 4800,
+                            Price = 3800,
                             TariffPlanId = 2
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 1,
-                            Price = 6400,
+                            Price = 4600,
                             TariffPlanId = 3
                         },
                         new
                         {
                             Id = 4,
                             CategoryId = 1,
-                            Price = 7400,
+                            Price = 5400,
                             TariffPlanId = 4
                         },
                         new
                         {
                             Id = 5,
                             CategoryId = 2,
-                            Price = 3600,
+                            Price = 3400,
                             TariffPlanId = 1
                         },
                         new
                         {
                             Id = 6,
                             CategoryId = 2,
-                            Price = 4800,
+                            Price = 4300,
                             TariffPlanId = 2
                         },
                         new
                         {
                             Id = 7,
                             CategoryId = 2,
-                            Price = 6400,
+                            Price = 5200,
                             TariffPlanId = 3
                         },
                         new
                         {
                             Id = 8,
                             CategoryId = 2,
-                            Price = 7400,
+                            Price = 6200,
                             TariffPlanId = 4
                         },
                         new
@@ -232,98 +210,98 @@ namespace HotelAdmin.Migrations
                         {
                             Id = 11,
                             CategoryId = 3,
-                            Price = 6900,
+                            Price = 6300,
                             TariffPlanId = 3
                         },
                         new
                         {
                             Id = 12,
                             CategoryId = 3,
-                            Price = 7900,
+                            Price = 7400,
                             TariffPlanId = 4
                         },
                         new
                         {
                             Id = 13,
                             CategoryId = 4,
-                            Price = 4100,
+                            Price = 4500,
                             TariffPlanId = 1
                         },
                         new
                         {
                             Id = 14,
                             CategoryId = 4,
-                            Price = 5300,
+                            Price = 5400,
                             TariffPlanId = 2
                         },
                         new
                         {
                             Id = 15,
                             CategoryId = 4,
-                            Price = 6900,
+                            Price = 6200,
                             TariffPlanId = 3
                         },
                         new
                         {
                             Id = 16,
                             CategoryId = 4,
-                            Price = 7900,
+                            Price = 7200,
                             TariffPlanId = 4
                         },
                         new
                         {
                             Id = 17,
                             CategoryId = 5,
-                            Price = 10300,
+                            Price = 5300,
                             TariffPlanId = 1
                         },
                         new
                         {
                             Id = 18,
                             CategoryId = 5,
-                            Price = 11400,
+                            Price = 6400,
                             TariffPlanId = 2
                         },
                         new
                         {
                             Id = 19,
                             CategoryId = 5,
-                            Price = 12700,
+                            Price = 7500,
                             TariffPlanId = 3
                         },
                         new
                         {
                             Id = 20,
                             CategoryId = 5,
-                            Price = 13700,
+                            Price = 8700,
                             TariffPlanId = 4
                         },
                         new
                         {
                             Id = 21,
                             CategoryId = 6,
-                            Price = 12300,
+                            Price = 6300,
                             TariffPlanId = 1
                         },
                         new
                         {
                             Id = 22,
                             CategoryId = 6,
-                            Price = 13400,
+                            Price = 7400,
                             TariffPlanId = 2
                         },
                         new
                         {
                             Id = 23,
                             CategoryId = 6,
-                            Price = 14700,
+                            Price = 8500,
                             TariffPlanId = 3
                         },
                         new
                         {
                             Id = 24,
                             CategoryId = 6,
-                            Price = 15700,
+                            Price = 9800,
                             TariffPlanId = 4
                         });
                 });
@@ -398,17 +376,54 @@ namespace HotelAdmin.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("character varying(255)");
 
+                    b.Property<string>("Title")
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("HotelAdmin.Models.Entity.LoginModel", b =>
+                {
+                    b.Property<string>("Email")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Email");
+
+                    b.ToTable("LoginModels");
+
+                    b.HasData(
+                        new
+                        {
+                            Email = "admin@mail.ru",
+                            Password = "$2a$11$iF0y3eNqew/YXRPpPCGE2.sh3jwtWMbcOihfGd8M0/OWvGGKrgKGK",
+                            Role = 0
+                        },
+                        new
+                        {
+                            Email = "manager@mail.ru",
+                            Password = "$2a$11$lT8u7BmSxbPNzH14fER8I.AvOBPsqtOPUdR.xzbO1YdIzIuoxi9bW",
+                            Role = 1
+                        });
                 });
 
             modelBuilder.Entity("HotelAdmin.Models.Entity.Order", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("Number");
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("BookingNumber")
+                        .HasColumnType("text");
 
                     b.Property<int>("ClientId")
                         .HasColumnType("integer");
@@ -434,8 +449,10 @@ namespace HotelAdmin.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("Number");
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("BookingNumber")
+                        .HasColumnType("text");
 
                     b.Property<int>("ClientId")
                         .HasColumnType("integer");
@@ -577,202 +594,6 @@ namespace HotelAdmin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("HotelAdmin.Models.Entity.RoomTariff", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Price")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("RoomId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("TariffPlanId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RoomId");
-
-                    b.HasIndex("TariffPlanId");
-
-                    b.ToTable("Tariffs");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Price = 3600,
-                            RoomId = 1,
-                            TariffPlanId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Price = 4800,
-                            RoomId = 1,
-                            TariffPlanId = 2
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Price = 6400,
-                            RoomId = 1,
-                            TariffPlanId = 3
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Price = 7400,
-                            RoomId = 1,
-                            TariffPlanId = 4
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Price = 3600,
-                            RoomId = 2,
-                            TariffPlanId = 1
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Price = 4800,
-                            RoomId = 2,
-                            TariffPlanId = 2
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Price = 6400,
-                            RoomId = 2,
-                            TariffPlanId = 3
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Price = 7400,
-                            RoomId = 2,
-                            TariffPlanId = 4
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Price = 4100,
-                            RoomId = 3,
-                            TariffPlanId = 1
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Price = 5300,
-                            RoomId = 3,
-                            TariffPlanId = 2
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Price = 6900,
-                            RoomId = 3,
-                            TariffPlanId = 3
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Price = 7900,
-                            RoomId = 3,
-                            TariffPlanId = 4
-                        },
-                        new
-                        {
-                            Id = 13,
-                            Price = 4100,
-                            RoomId = 4,
-                            TariffPlanId = 1
-                        },
-                        new
-                        {
-                            Id = 14,
-                            Price = 5300,
-                            RoomId = 4,
-                            TariffPlanId = 2
-                        },
-                        new
-                        {
-                            Id = 15,
-                            Price = 6900,
-                            RoomId = 4,
-                            TariffPlanId = 3
-                        },
-                        new
-                        {
-                            Id = 16,
-                            Price = 7900,
-                            RoomId = 4,
-                            TariffPlanId = 4
-                        },
-                        new
-                        {
-                            Id = 17,
-                            Price = 10300,
-                            RoomId = 5,
-                            TariffPlanId = 1
-                        },
-                        new
-                        {
-                            Id = 18,
-                            Price = 11400,
-                            RoomId = 5,
-                            TariffPlanId = 2
-                        },
-                        new
-                        {
-                            Id = 19,
-                            Price = 12700,
-                            RoomId = 5,
-                            TariffPlanId = 3
-                        },
-                        new
-                        {
-                            Id = 20,
-                            Price = 13700,
-                            RoomId = 5,
-                            TariffPlanId = 4
-                        },
-                        new
-                        {
-                            Id = 21,
-                            Price = 12300,
-                            RoomId = 6,
-                            TariffPlanId = 1
-                        },
-                        new
-                        {
-                            Id = 22,
-                            Price = 13400,
-                            RoomId = 6,
-                            TariffPlanId = 2
-                        },
-                        new
-                        {
-                            Id = 23,
-                            Price = 14700,
-                            RoomId = 6,
-                            TariffPlanId = 3
-                        },
-                        new
-                        {
-                            Id = 24,
-                            Price = 15700,
-                            RoomId = 6,
-                            TariffPlanId = 4
-                        });
-                });
-
             modelBuilder.Entity("HotelAdmin.Models.Entity.Subscriber", b =>
                 {
                     b.Property<int>("Id")
@@ -828,7 +649,7 @@ namespace HotelAdmin.Migrations
                         new
                         {
                             Id = 4,
-                            Description = "Включён завтрак, обед и ужин"
+                            Description = "Полный пансион"
                         });
                 });
 
@@ -859,8 +680,8 @@ namespace HotelAdmin.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("HotelAdmin.Models.Entity.RoomTariff", "Tariff")
-                        .WithMany()
+                    b.HasOne("HotelAdmin.Models.Entity.CategoryTariff", "Tariff")
+                        .WithMany("Clients")
                         .HasForeignKey("TariffId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -873,7 +694,7 @@ namespace HotelAdmin.Migrations
             modelBuilder.Entity("HotelAdmin.Models.Entity.Order", b =>
                 {
                     b.HasOne("HotelAdmin.Models.Entity.Client", "Client")
-                        .WithMany()
+                        .WithMany("Orders")
                         .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -920,25 +741,6 @@ namespace HotelAdmin.Migrations
                     b.Navigation("Room");
                 });
 
-            modelBuilder.Entity("HotelAdmin.Models.Entity.RoomTariff", b =>
-                {
-                    b.HasOne("HotelAdmin.Models.Entity.Room", "Room")
-                        .WithMany("Tariffs")
-                        .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("HotelAdmin.Models.Entity.TariffPlan", "TariffPlan")
-                        .WithMany("Tariffs")
-                        .HasForeignKey("TariffPlanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Room");
-
-                    b.Navigation("TariffPlan");
-                });
-
             modelBuilder.Entity("HotelAdmin.Models.Entity.Category", b =>
                 {
                     b.Navigation("Rooms");
@@ -946,8 +748,15 @@ namespace HotelAdmin.Migrations
                     b.Navigation("TariffAdmins");
                 });
 
+            modelBuilder.Entity("HotelAdmin.Models.Entity.CategoryTariff", b =>
+                {
+                    b.Navigation("Clients");
+                });
+
             modelBuilder.Entity("HotelAdmin.Models.Entity.Client", b =>
                 {
+                    b.Navigation("Orders");
+
                     b.Navigation("RoomDates");
                 });
 
@@ -956,15 +765,11 @@ namespace HotelAdmin.Migrations
                     b.Navigation("Clients");
 
                     b.Navigation("RoomDates");
-
-                    b.Navigation("Tariffs");
                 });
 
             modelBuilder.Entity("HotelAdmin.Models.Entity.TariffPlan", b =>
                 {
                     b.Navigation("TariffAdmins");
-
-                    b.Navigation("Tariffs");
                 });
 #pragma warning restore 612, 618
         }

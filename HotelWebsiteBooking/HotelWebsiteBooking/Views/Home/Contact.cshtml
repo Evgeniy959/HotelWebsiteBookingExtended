@@ -2,28 +2,43 @@
     ViewData["Title"] = "Contact";
 }
 
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Контактная информация</h2>
+                    <div class="bt-option">
+                        <a asp-controller="Home" asp-action="Index">Главная</a>
+                        <span>Контакты</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <section class="contact-section spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-20">
+            <div class="col-lg-6">
                 <div class="contact-text">
-                    <h2>Contact Info</h2>
-                    <p>
-                        We know what a good hotel is where you can have a good time, regardless of the purpose of your visit.
-                    </p>
+                    <h5>
+                        Мы знаем, что такое хороший отель, где вы можете хорошо провести время, независимо от цели вашего визита.
+                    </h5>
+                    <br />
                     <table class="tab">
                         <tbody>
                             <tr>
-                                <td class="c-o">Address:</td>
+                                <td class="c-o">Адрес:</td>
                                 <td>Krasnodar territory, Sochi, Lenin str., 2, a/z 110</td>
                             </tr>
                             <tr>
-                                <td class="c-o">Phone:</td>
+                                <td class="c-o">Телефон:</td>
                                 <td>8(800) 350 4590</td>
                             </tr>
                             <tr>
                                 <td class="c-o">Email:</td>
-                                <td>info.sirius@gmail.com</td>
+                                <td>info.myhotel@gmail.com</td>
                             </tr>
                             <tr>
                                 <td class="c-o">Fax:</td>
@@ -33,10 +48,31 @@
                     </table>
                 </div>
             </div>
+            <div class="col-lg-6">
+                <div class="room-booking">
+                    <p><strong>ДРУГИЕ СПОСОБЫ СВЯЗИ</strong></p>
+                    <hr />
+                    <p><strong>Отдел бронирования:</strong></p>
+                    <ul>
+                        <li>8 800-350-4700 (звонок бесплатный)</li>
+                        <li>hotel@myhotel.ru</li>
+                    </ul>
+                    <hr />
+                    <p><strong>Отдел продаж:</strong></p>
+                    <ul>
+                        <li>sales@myhotel.ru</li>
+                    </ul>
+                    <hr />
+                    <p><strong>Ресепшн:</strong></p>
+                    <ul>
+                        <li>8 872-272-6262 (Пн-Вс: круглосуточно)</li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
         <div class="map">
-            <iframe src="https://yandex.ru/maps/239/sochi/chain/sirius_hotels/127624846510/filter/chain_id/127624846510/?ll=39.986735%2C43.431058&sctx=ZAAAAAgBEAAaKAoSCVhzgGCO3ENAERTQRNjwykVAEhIJ7lpCPugZ8z8Rc7wC0ZOy5D8iBgABAgMEBSgAOABA1awNSAFqAnJ1nQHNzEw9oAEAqAEAvQEhQLDhwgEXsuXFqJsE0%2Buw8KAB8IzS0Y0Bqqu0rgTqAQDyAQD4AQCCAhdjaGFpbl9pZDooMTI3NjI0ODQ2NTEwKYoCAJICAJoCDGRlc2t0b3AtbWFwc6oCJjEyNzYyNDg0NjUxMCwyMjEwNjg0MzY2NzEsMTM2MzQ3Mzc4MzAwsAIB&sll=39.986735%2C43.431058&sspn=0.128967%2C0.053148&z=13.2" height="470" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="~/img/cart.png" height="470" style="border:0;" allowfullscreen=""></iframe>
         </div>
     </div>
 </section>
