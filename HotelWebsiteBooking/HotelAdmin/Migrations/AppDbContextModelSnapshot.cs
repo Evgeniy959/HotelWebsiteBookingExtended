@@ -35,6 +35,7 @@ namespace HotelAdmin.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Path")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int>("PersonsCount")
@@ -87,7 +88,7 @@ namespace HotelAdmin.Migrations
                             Name = "Комфорт \"queen-size\"",
                             Path = "StandardGoodBig",
                             PersonsCount = 2,
-                            Photo = "img/room/room-sbi.jpeg",
+                            Photo = "img/room/room-sbi.jpg",
                             Square = "25 кв.м"
                         },
                         new
@@ -405,13 +406,13 @@ namespace HotelAdmin.Migrations
                         new
                         {
                             Email = "admin@mail.ru",
-                            Password = "$2a$11$iF0y3eNqew/YXRPpPCGE2.sh3jwtWMbcOihfGd8M0/OWvGGKrgKGK",
+                            Password = "$2a$11$zfso7ph7zDdQreq06hqN9.T0vvsmgIxP72cPrl.StYhhCOl9itx72",
                             Role = 0
                         },
                         new
                         {
                             Email = "manager@mail.ru",
-                            Password = "$2a$11$lT8u7BmSxbPNzH14fER8I.AvOBPsqtOPUdR.xzbO1YdIzIuoxi9bW",
+                            Password = "$2a$11$Pe7T1EspjrAh1nbFH3gfEuha0cyrfseBYc6OrqpQvr5DD1A.mac42",
                             Role = 1
                         });
                 });

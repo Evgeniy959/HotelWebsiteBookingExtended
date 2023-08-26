@@ -117,7 +117,7 @@ namespace HotelAdmin.Service.OrderService
                                            <td>{order.Client.Room.Category.PersonsCount}-х местный, {order.Client.Room.Category.Name}, {order.Client.Room.Category.Square}</td>
                                        </tr>
                                        <tr>
-                                           <td>Режим питания:</td>
+                                           <td>Тариф:</td>
                                            <td>{order.Client.Tariff.TariffPlan.Description}</td>
                                        </tr>
                                        <tr>
@@ -159,7 +159,7 @@ namespace HotelAdmin.Service.OrderService
                 </div>";
                 stringBuilder.Append(BookingForm);
                 await _emailSender.SendEmailAsync(order.Client.Email, "Подтверждение бронирования", stringBuilder.ToString());
-                order.Status = "отправлен";
+                order.Status = "отправлено";
                 order.BookingNumber = booking.Number;
                 order.Date = booking.Date;
                 await UpdateAsync(order);

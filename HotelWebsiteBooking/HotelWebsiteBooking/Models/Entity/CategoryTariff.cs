@@ -5,14 +5,8 @@ namespace HotelWebsiteBooking.Models.Entity
     public class CategoryTariff
     {
         public int Id { get; set; }
-        /*[Display(Name = "Категория")]
-        [Required]*/
         public int CategoryId { get; set; }
-        /*[Display(Name = "Тарифный план")]
-        [Required]*/
         public int TariffPlanId { get; set; }
-        /*[Display(Name = "Цена")]
-        [Required]*/
         public int Price { get; set; }
 
         // навигационные свойства

@@ -35,7 +35,17 @@ namespace HotelWebsiteBooking.Controllers
             return View();
         }
 
-        public IActionResult News()
+        public IActionResult Spa()
+        {
+            return View();
+        }
+
+        public IActionResult Restaurant()
+        {
+            return View();
+        }
+
+        public IActionResult Pool()
         {
             return View();
         }
@@ -56,29 +66,59 @@ namespace HotelWebsiteBooking.Controllers
             return View(_daoRoom.GetRoomAsync(idRoom).Result);
         }
 
-        public IActionResult StandardBig()
+        public IActionResult StandardBig(int? idRoom, int? roomId)
         {
-            return View();
+            if (roomId != null)
+            {
+                ViewBag.Days = _date.end.Subtract(_date.start).Days;
+                ViewData["Messege"] = "Booking";
+                return View(_daoRoom.GetRoomAsync(roomId).Result);
+            }
+            return View(_daoRoom.GetRoomAsync(idRoom).Result);
         }
 
-        public IActionResult StandardGood()
+        public IActionResult StandardGood(int? idRoom, int? roomId)
         {
-            return View();
+            if (roomId != null)
+            {
+                ViewBag.Days = _date.end.Subtract(_date.start).Days;
+                ViewData["Messege"] = "Booking";
+                return View(_daoRoom.GetRoomAsync(roomId).Result);
+            }
+            return View(_daoRoom.GetRoomAsync(idRoom).Result);
         }
 
-        public IActionResult StandardGoodBig()
+        public IActionResult StandardGoodBig(int? idRoom, int? roomId)
         {
-            return View();
+            if (roomId != null)
+            {
+                ViewBag.Days = _date.end.Subtract(_date.start).Days;
+                ViewData["Messege"] = "Booking";
+                return View(_daoRoom.GetRoomAsync(roomId).Result);
+            }
+            return View(_daoRoom.GetRoomAsync(idRoom).Result);
         }
 
-        public IActionResult SemiLuxury()
+        public IActionResult SemiLuxury(int? idRoom, int? roomId)
         {
-            return View();
+            if (roomId != null)
+            {
+                ViewBag.Days = _date.end.Subtract(_date.start).Days;
+                ViewData["Messege"] = "Booking";
+                return View(_daoRoom.GetRoomAsync(roomId).Result);
+            }
+            return View(_daoRoom.GetRoomAsync(idRoom).Result);
         }
 
-        public IActionResult Luxury()
+        public IActionResult Luxury(int? idRoom, int? roomId)
         {
-            return View();
+            if (roomId != null)
+            {
+                ViewBag.Days = _date.end.Subtract(_date.start).Days;
+                ViewData["Messege"] = "Booking";
+                return View(_daoRoom.GetRoomAsync(roomId).Result);
+            }
+            return View(_daoRoom.GetRoomAsync(idRoom).Result);
         }
 
         public IActionResult Privacy()

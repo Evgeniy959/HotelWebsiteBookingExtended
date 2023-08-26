@@ -89,14 +89,6 @@ namespace HotelWebsiteBooking.Service.RoomService
             await _context.Rooms.LoadAsync();
             await _context.Categorys.LoadAsync();
             await _context.TariffAdmins.LoadAsync();
-            //await _context.Tariffs.LoadAsync();
-            /*var dateNull = await _context.Dates.Where(x => x.Start == null && x.Room.Category.PersonsCount >= count).ToListAsync();
-            if (dateNull.Count > 0)
-            {
-                return dateNull.GroupBy(g => g.Room.CategoryId)
-                        .Select(r => r.First())
-                        .ToList(); 
-            }*/
             var rooms = await _context.Dates.Where(x => x.Room.Category.PersonsCount >= count).ToListAsync();
             var roomDates = await _context.Dates.Where(x => x.Start >= start && x.End <= end && x.Room.Category.PersonsCount >= count
             || x.Start >= start && x.Start <= end && x.End >= end && x.Room.Category.PersonsCount >= count
@@ -132,8 +124,9 @@ namespace HotelWebsiteBooking.Service.RoomService
         {
             await _context.Categorys.LoadAsync();
             await _context.TariffAdmins.LoadAsync();
+            await _context.TariffPlans.LoadAsync();
             var room = await _context.Rooms
-                .SingleOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             return room;
         }

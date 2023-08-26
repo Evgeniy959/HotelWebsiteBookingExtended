@@ -1,4 +1,5 @@
 using HotelAdmin.Models;
+using HotelAdmin.Service.AccessService;
 using HotelAdmin.Service.BookingService;
 using HotelAdmin.Service.CategoryService;
 using HotelAdmin.Service.CategoryTariffService;
@@ -8,7 +9,6 @@ using HotelAdmin.Service.EmailService;
 using HotelAdmin.Service.OrderService;
 using HotelAdmin.Service.RoomDateService;
 using HotelAdmin.Service.RoomService;
-//using HotelAdmin.Service.RoomTariffService;
 using HotelAdmin.Service.SubscriberService;
 using HotelAdmin.Service.TariffPlanService;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -32,6 +32,7 @@ builder.Services.AddTransient<IDaoComment, DbDaoComment>();
 builder.Services.AddTransient<IDaoSubscriber, DbDaoSubscriber>();
 builder.Services.AddTransient<IDaoBooking, DbDaoBooking>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddTransient<IDaoAccess, DbDaoAccess>();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));

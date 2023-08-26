@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Tariff";
+    int i = 0;
 }
 
 <div class="breadcrumb-section">
@@ -48,11 +49,42 @@
                     <div class="room-item">
                         <div class="ri-text">
                             <div class="col-lg-2">
-                                <div class="breadcrumb-text">
+                                <div id="detail-@item.TariffPlanId" class="breadcrumb-text">
                                     <div class="bt-option">
-                                        <a asp-controller="Home" asp-action="Index"><span style="font-size: 14px">Подробнее</span></a>
+                                        <a ><span style="font-size: 14px">Подробнее</span></a>
                                     </div>
+                                    
                                 </div>
+                            </div>
+                            <div id="show-@item.TariffPlanId" class="col-lg-12" style="display: none;">
+                                <p><strong>В стоимость тарифа включено:</strong></p>
+                                <ul>
+                                    <li>Проживание в новых номерах</li>
+                                    
+                                    @if (item.TariffPlan.Description == "Без питания")
+                                    {
+                                        <li>Питание не включёно в стоимость проживания</li>
+                                    }
+                                    @if (item.TariffPlan.Description == "Завтрак включён")
+                                    {
+                                        <li>Питание по системе "Шведский стол" </li>
+                                        <li>В питание включён завтрак</li>
+                                    }
+                                    @if (item.TariffPlan.Description == "Полупансион")
+                                    {
+                                        <li>Питание по системе "Шведский стол" </li>
+                                        <li>В питание включён завтрак и обед</li>
+                                    }
+                                    @if (item.TariffPlan.Description == "Полный пансион")
+                                    {
+                                        <li>Питание по системе "Шведский стол" </li>
+                                        <li>В питание включён завтрак, обед и ужин</li>
+                                    }
+                                    <li>Ресторан с блюдами от шеф-повара</li>
+                                    <li>Бесплатное посещение СПА-зоны с 10:00 до 18:00</li>
+                                    <li>Бесплатное посещение летнего бассейна с 10:00 до 19:30</li>
+                                    <li>Возможен заказ ужина с подачей в номер (сервисный сбор 10%)</li>                                    
+                                </ul>
                             </div>
                             <br>
                             <h4>@item.TariffPlan.Description</h4>
@@ -70,3 +102,61 @@
         </div>
     </div>
 </section>
+
+@section Scripts{
+    <script>
+    let counter = 0;
+$('#detail-1').click(function() {
+    counter++;
+    if(counter == 1)
+    {                        
+        document.getElementById('show-1').style.display = "block";
+    }
+    if(counter == 2)
+    {                        
+        document.getElementById('show-1').style.display = "none";
+        counter = 0;
+    }        
+
+});
+$('#detail-2').click(function() {
+    counter++;
+    if(counter == 1)
+    {                        
+        document.getElementById('show-2').style.display = "block";
+    }
+    if(counter == 2)
+    {                        
+        document.getElementById('show-2').style.display = "none";
+        counter = 0;
+    }        
+
+});
+$('#detail-3').click(function() {
+    counter++;
+    if(counter == 1)
+    {                        
+        document.getElementById('show-3').style.display = "block";
+    }
+    if(counter == 2)
+    {                        
+        document.getElementById('show-3').style.display = "none";
+        counter = 0;
+    }        
+
+});
+$('#detail-4').click(function() {
+    counter++;
+    if(counter == 1)
+    {                        
+        document.getElementById('show-4').style.display = "block";
+    }
+    if(counter == 2)
+    {                        
+        document.getElementById('show-4').style.display = "none";
+        counter = 0;
+    }        
+
+});
+</script>
+}

@@ -6,20 +6,13 @@
     ViewData["Title"] = "Pay";
 }
 
-@if (TempData.ContainsKey("Status"))
-{
-    <div class="alert alert-danger" role="alert">
-        <strong>Notification!</strong> @TempData["Status"]
-    </div>
-}
-
 <div class="breadcrumb-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text">
                     <div>
-                        <form asp-action="Pay" asp-controller="Room" method="post">
+                        <form asp-action="Pay" asp-controller="Payment" method="post">
                             <article>
                                 <label>Сумма: @ViewBag.Price руб</label>
                                 <input name="price" value="@ViewBag.Price" type="hidden" />

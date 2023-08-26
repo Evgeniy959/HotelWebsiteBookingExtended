@@ -62,7 +62,6 @@ namespace HotelAdmin.Service.RoomService
         public async Task<List<Room>> IndexAsync(int page)
         {
             await _context.Categorys.LoadAsync();
-            //await _context.Tariffs.LoadAsync();
             await _context.TariffAdmins.LoadAsync();
             var rooms = await _context.Rooms.ToListAsync();
             List<Room> list = new List<Room>();

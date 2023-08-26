@@ -20,8 +20,6 @@ namespace HotelAdmin.Models
         public DbSet<Comment> Comments { get; set; }
         public DbSet<CategoryTariff> TariffAdmins { get; set; }
         public DbSet<TariffPlan> TariffPlans { get; set; }
-        /*public DbSet<Booking> Bookings { get; set; }
-        public DbSet<BookingPay> BookingPays { get; set; }*/
         public DbSet<LoginModel> LoginModels { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

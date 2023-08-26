@@ -16,7 +16,6 @@ using System.Security.Claims;
 
 namespace HotelAdmin.Controllers
 {
-    //[Authorize(Roles = "Administrator")]
     public class RoomController : Controller
     {
         private readonly AppDbContext _context;
@@ -27,14 +26,10 @@ namespace HotelAdmin.Controllers
             _context = context;
             _daoRoom = daoRoom;
         }
-        //[Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Index(int page = 1)
         {
             ViewBag.TotalPages = Math.Ceiling((await _context.Rooms.ToListAsync()).Count / 10.0);
             ViewBag.CurrentPage = page;
-            var login = HttpContext.User.FindFirst(ClaimsIdentity.DefaultNameClaimType);
-            var role = HttpContext.User.FindFirst(ClaimsIdentity.DefaultRoleClaimType);
-            Console.WriteLine($"Name: {login?.Value}\nRole: {role?.Value}");
             return View(_daoRoom.IndexAsync(page).Result);
         }
 

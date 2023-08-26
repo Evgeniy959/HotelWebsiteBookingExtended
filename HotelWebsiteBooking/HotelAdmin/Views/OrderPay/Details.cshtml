@@ -114,7 +114,10 @@
 </div>
 <br/>
 <div>
-    <a asp-action="BookingSend" asp-route-id="@Model.Id" class="btn btn-secondary">Отправить</a>
+    @if (Model.Status!="отправлено")
+    {
+        <a asp-action="BookingSend" asp-route-id="@Model.Id" class="btn btn-secondary">Отправить</a>
+    }
     <a asp-action="Index" class="btn btn-info">К списку</a>
 </div>
 </div>

@@ -29,6 +29,10 @@ body {
     background-color: snow;
 }
 
+.nav-col {
+    color: black;
+}
+
 .details {
     background-color: snow;
     width: 55%;
@@ -62,6 +66,10 @@ body {
 
 .nav {
     background-color: whitesmoke;
+}
+
+.book-btn:disabled {
+    opacity: 0.5;
 }
 
 .auth {

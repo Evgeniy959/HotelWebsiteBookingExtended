@@ -47,18 +47,13 @@ namespace HotelWebsiteBooking.Controllers
             return rooms.Any() ? View(rooms) : RedirectToAction("NotFind");
         }
 
-        public IActionResult Tariff(int id)
+        public IActionResult Tariff(int? id)
         {
             ViewBag.Start = _date.start.ToLongDateString();
             ViewBag.End = _date.end.ToLongDateString();
-            //ViewBag.Price = price;
             ViewBag.Guest = _guest.GuestCount;
             ViewBag.Days = _date.end.Subtract(_date.start).Days;
-            _context.Categorys.Load();
-            //_context.Tariffs.Load();
-            _context.TariffAdmins.Load();
-            _context.TariffPlans.Load();
-            var room = _context.Rooms.FirstOrDefault(m => m.Id == id);
+            var room = _daoRoom.GetRoomAsync(id).Result;
             if (room == null)
             {
                 return NotFound();
@@ -66,7 +61,7 @@ namespace HotelWebsiteBooking.Controllers
             return View(room);
         }
 
-        public IActionResult Booking(int roomId, int tariffId, int price, string tariff, Client client)
+        public IActionResult Booking(int? roomId, int tariffId, int price, string tariff, Client client)
         {
             ViewBag.Start = _date.start.ToShortDateString();
             ViewBag.End = _date.end.ToShortDateString();
@@ -74,14 +69,7 @@ namespace HotelWebsiteBooking.Controllers
             ViewBag.Guest = _guest.GuestCount;
             ViewBag.Days = _date.end.Subtract(_date.start).Days;
             ViewBag.Tariff = tariff;
-            //ViewBag.TariffId = tariffId;
-            _context.Rooms.Load();
-            _context.Categorys.Load();
-            var room = _context.Rooms.FirstOrDefault(m => m.Id == roomId);
-            if (room == null)
-            {
-                return NotFound();
-            }
+            var room = _daoRoom.GetRoomAsync(roomId).Result;
             client.Room = room;
             client.TariffId = tariffId;
             return View(client);
@@ -89,6 +77,7 @@ namespace HotelWebsiteBooking.Controllers
 
         public IActionResult NotFind()
         {
+            TempData["Status"] = "Неудачный поиск!";
             return View();
         }
 
@@ -99,77 +88,21 @@ namespace HotelWebsiteBooking.Controllers
             {
                 ViewBag.Price = price;
                 ViewBag.Сontent = content;
-                //ViewBag.Email = client.Email;
                 return View("Pay", client);
             }
             else if (payment == "inPlace")
             {
                 if (_daoRoom.AddBookingAsync(date, client, content, order, orderPay).Result == true)
                 {
+                    TempData["Status"] = "Успешное бронирование!";
                     return View("Info", client);
                 }
                 
             }
-            //else
-            //{
-                TempData["Status"] = "Неудачное бронирование, попробуйте еще раз!";
-                return RedirectToAction("Booking", client);
-            //}
-            //return View("Booking", client);
+            TempData["Status"] = "Неудачное бронирование, попробуйте еще раз!";
+            return View("InfoEror");
         }
         
-        [HttpPost]
-        public IActionResult Pay(string stripeEmail, string stripeToken, RoomDate date, Client client, string content, Order order, OrderPay orderPay, int price)
-        {
-            var customers = new CustomerService();
-            var charges = new ChargeService();
-            var customer = customers.Create(new CustomerCreateOptions
-            {
-                Email = stripeEmail,
-                //Email = client.Email,
-                //Name = client.Name,
-                Source = stripeToken
-            });
-            var orderPayId = Guid.NewGuid();
-            var charge = charges.Create(new ChargeCreateOptions
-            {
-                Amount = price*100,
-                Description = orderPayId.ToString(),
-                Currency = "rub",
-                Customer = customer.Id,
-                ReceiptEmail = stripeEmail,
-                Metadata = new Dictionary<string, string>()
-                {
-                    {"Order number", orderPayId.ToString() },
-                    {"Client email", client.Email },
-                    {"Client name", client.Name },
-                    {"Client surname", client.Surname }
-
-                }
-            });
-            if (charge.Status == "succeeded")
-            {
-                ViewBag.Status = charge.Status;
-                orderPay.Id = orderPayId;
-                orderPay.Status = "оплачено";
-                if (_daoRoom.AddBookingAsync(date, client, content, order, orderPay).Result == true)
-                {
-                    return View("InfoPay");
-                }
-                else
-                {
-                    TempData["Status"] = "Неудачное бронирование, попробуйте еще раз!";
-                    return View("Pay", client);
-                }
-            }
-            else
-            {
-                TempData["Status"] = "Неудачная оплата, попробуйте еще раз!";
-                return View("Pay", client);
-            }
-            //return View();
-        }
-
 
     }
 }

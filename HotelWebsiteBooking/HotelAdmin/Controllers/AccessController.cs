@@ -6,16 +6,20 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using HotelAdmin.Models.Entity;
 using System;
+using HotelAdmin.Service.AccessService;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace HotelAdmin.Controllers
 {
     public class AccessController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IDaoAccess _daoAccess;
 
-        public AccessController(AppDbContext context)
+        public AccessController(AppDbContext context, IDaoAccess daoAccess)
         {
             _context = context;
+            _daoAccess = daoAccess;
         }
         
         public IActionResult Login()
@@ -30,26 +34,18 @@ namespace HotelAdmin.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginModel loginModel)
         {
-            var modelDb = await _context.LoginModels.FirstOrDefaultAsync(a => a.Email == loginModel.Email);
-            if (modelDb != null)
+            if (ModelState.IsValid)
             {
-                bool validPassword = BCrypt.Net.BCrypt.Verify(loginModel.Password, modelDb.Password);
-                if (validPassword)
+                var result = await _daoAccess.LoginAsync(loginModel);
+                if (result.Success)
                 {
-                    var claims = new List<Claim>
-                    {
-                        new Claim(ClaimsIdentity.DefaultNameClaimType, modelDb.Email),
-                        new Claim(ClaimsIdentity.DefaultRoleClaimType, modelDb.Role.ToString())
-                        /*new Claim(ClaimTypes.Name, loginModel.Email),
-                        new Claim(ClaimTypes.Role, loginModel.Role.ToString())*/
-                    };
-                    //var claims = new List<Claim> { new Claim(ClaimTypes.Name, admin.Email) };
-                    ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "AppCookies", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+                    
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(result.DataIdentity));
                     return RedirectToAction("Index", "Home");
                 }
+                ViewData["ValidateMessege"] = result.Message;
+                return View();
             }
-            ViewData["ValidateMessege"] = "Invalid Email or Password";
             return View();
             
         }

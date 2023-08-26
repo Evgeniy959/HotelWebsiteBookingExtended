@@ -9,11 +9,12 @@
         <div class="col-md-8 col-md-offset-3">
             <div class="card" style="margin-top:15px">
                 <div class="card-header">
-                    <h5 class="card-title text-center"> Add new category</h5>
+                    <h5 class="card-title text-center"> Добавить категорию</h5>
                 </div>
                 <div class="card-body">
                     <form asp-action="Add" asp-controller="Category" method="post" enctype="multipart/form-data">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Path" value="Standard" />
                         <div class="form-group">
                             <label class="control-label">Название</label>
                             <input asp-for="Name" class="form-control" />
@@ -37,10 +38,10 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-6">
-                                    <input type="submit" class="form-control btn btn-primary" value="Add category" />
+                                    <input type="submit" class="form-control btn btn-primary" value="Добавить" />
                                 </div>
                                 <div class="col-6">
-                                    <a asp-action="Index" asp-controller="Category" class="form-control btn btn-info">Back to List</a>
+                                    <a asp-action="Index" asp-controller="Category" class="form-control btn btn-info">К списку</a>
                                 </div>
                             </div>
                         </div>

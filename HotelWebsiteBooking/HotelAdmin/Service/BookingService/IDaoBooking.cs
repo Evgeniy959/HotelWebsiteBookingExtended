@@ -5,6 +5,5 @@ namespace HotelAdmin.Service.BookingService
     public interface IDaoBooking
     {
         Task<Booking> AddBookingAsync();
-        Task<BookingPay> AddBookingPayAsync(Guid id);
     }
 }

@@ -14,39 +14,42 @@
 </head>
 <body>
     <header class="nav-head">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         @if (User.IsInRole("Administrator"))
                         {
-                            <li><a class="dropdown-item" asp-controller="Room" asp-action="Index">Rooms</a></li>
-                            <li><a class="dropdown-item" asp-controller="Category" asp-action="Index">Category </a></li>
-                            <li><a class="dropdown-item" asp-controller="CategoryTariff" asp-action="Index">TariffAdmins </a></li>
-                            <li><a class="dropdown-item" asp-controller="TariffPlan" asp-action="Index">TariffPlans </a></li>
+                            <li><a class="dropdown-item text-dark" asp-controller="Room" asp-action="Index"><span class="nav-col">Комнаты</span></a></li>
+                            <li><a class="dropdown-item text-dark" asp-controller="Category" asp-action="Index">Категории </a></li>
+                            <li><a class="dropdown-item text-dark" asp-controller="CategoryTariff" asp-action="Index">Тарифы </a></li>
+                            <li><a class="dropdown-item text-dark" asp-controller="TariffPlan" asp-action="Index">Тарифный план </a></li>
+                            <li><a class="dropdown-item text-dark" asp-controller="Subscriber" asp-action="Index">Подписчики</a></li>
+                            <li><a class="dropdown-item text-dark" asp-controller="Comment" asp-action="Index">Комментарии</a></li>
 
-                        }
-                        <li class="nav-item dropdown">
-                            <a class="navbar-brand dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Заказы
-                            </a>
-                            <ul class="dropdown-menu">
-                                
-                                <li><a class="dropdown-item" asp-controller="OrderPay" asp-action="Index">OrderPays</a></li>
-                                <li><a class="dropdown-item" asp-controller="Order" asp-action="Index">Orders</a></li>
-                            </ul>
-                        </li>
-                        @if (User.IsInRole("Administrator"))
+                        }                        
+                        @if (User.IsInRole("BookingManager"))
                         {
-                            <li><a class="dropdown-item" asp-controller="Client" asp-action="Index">Clients</a></li>
-                            <li><a class="dropdown-item" asp-controller="RoomDate" asp-action="Index">Dates</a></li>
-                            <li><a class="dropdown-item" asp-controller="Subscriber" asp-action="Index">Subscribers</a></li>
-                            <li><a class="dropdown-item" asp-controller="Comment" asp-action="Index">Comments</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Заказы
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item" asp-controller="OrderPay" asp-action="Index">С предоплатой</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Order" asp-action="Index">Без предоплаты</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item text-dark" asp-controller="Client" asp-action="Index">Клиенты</a></li>
+                            <li><a class="dropdown-item text-dark" asp-controller="RoomDate" asp-action="Index">Даты</a></li>
 
                         }
+                        
+                    </ul>
+                    <ul class="navbar-nav flex-grow-1 justify-content-end ml-auto">
                         <li class="nav-item">
-                            <a class="navbar-brand text-dark" asp-area="" asp-controller="Home" asp-action="LogOut">Выход</a>
+                            <a class="dropdown-item text-dark" asp-area="" asp-controller="Home" asp-action="LogOut">Выход</a>
                         </li>
                     </ul>
                 </div>

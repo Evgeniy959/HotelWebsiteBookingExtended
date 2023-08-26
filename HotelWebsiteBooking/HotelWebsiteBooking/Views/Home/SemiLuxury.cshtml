@@ -1,4 +1,101 @@
-﻿
-@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model HotelWebsiteBooking.Models.Entity.Room
+@inject AppDbContext _context
+@{
+    ViewData["Title"] = "SemiLuxury";
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>@Model.Category.Name</h2>
+                    <div class="bt-option">
+                        <a asp-controller="Home" asp-action="Index">Главная</a>
+                        <span>Комнаты</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="room-details-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="room-details-item">
+                    <img src="~/@Model.Category.Photo" alt="Photo" />
+                    <div class="rd-text">
+                        <div class="rd-title">
+                            <div class="rdt-right">
+                                @if (ViewData["Messege"] != null)
+                                {
+                                    <a asp-controller="Room" asp-action="Tariff" asp-route-id="@Model?.Id">Выбрать</a>
+                                }
+
+                            </div>
+                        </div>
+                        @if (ViewData["Messege"] != null)
+                        {
+                            <h2>от @(Model.Category.TariffAdmins.Min(t => t.Price) * ViewBag.Days) Р<span class="room-price">/Цена за @ViewBag.Days ночи</span></h2>
+                        }
+                        else
+                        {
+                            <h2>от @Model.Category.TariffAdmins.Min(t => t.Price) Р<span class="room-price">/Цена за 1 ночь</span></h2>
+                        }
+                        <partial name="_RoomCardPartial" model="@Model" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="room-booking">
+                    <p>
+                        Номер категории «@Model.Category.Name» площадью от @Model.Category.Square.
+                        Просторный и комфортный номер, разделенный на гостевое и спальное пространство.
+                        Прекрасно подойдет для семейного отдыха или небольшой компании, с возможностью размещения дополнительных мест.
+                    </p>
+                    <p><strong>Варианты размещения:</strong></p>
+                    <ul>
+                        <li>до 4 взрослых — без детей</li>
+                        <li>максимум 4 взрослых + возможно размещение детской кроватки для детей до 3-х лет</li>
+                    </ul>
+                    <br />
+                    <p><strong>Варианты питания:</strong></p>
+                    <ul>
+                        <li>Без питания</li>
+                        <li>Завтрак включён</li>
+                        <li>Полупансион</li>
+                        <li>Включён завтрак, обед и ужин</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-12" style="text-align:justify;">
+                <p class="f-para">
+                    Однокомнатный четырехместный номер категории «@Model.Category.Name» - Прекрасно подойдет для семейного отдыха или небольшой компании.
+                    Расслабиться от городской суеты поможет балкон с прекрасным видом на сосновый бор.
+                </p>
+                <p class="f-para">
+                    Уютные номера с двуспальной кроватью и диваном.
+                    Гостей ожидают удобные светлые комнаты с новой классической мебелью. Каждый номер оснащен: системой кондиционирования,
+                    большой кроватью (2х2) и диваном, телевизором с плоским экраном, быстрым WI-FI, разнообразным мини-баром и чайной станцией.
+                    Также имеется удобная гардеробная для ваших вещей. В номерах собственная ванная комната с душевой кабиной, зеркалом с подсветкой,
+                    феном, комплектом косметических принадлежностей, полотенцами и тапочками.
+                    Конфигурация номера может несколько отличаться от представленного на фото.
+                </p>
+                <p><strong>Для проживающих в номере категории «@Model.Category.Name» бесплатно доступно:</strong></p>
+                <ul>
+                    <li>Посещение Спа-зоны с двумя бассейнами, финской сауной, турецким хаммамом и чайной комнатой (ежедневно с 10:00 до 18:00)</li>
+                    <li>Отдых на большом летнем бассейне под открытым небом (в летний период)</li>
+                </ul>
+                <br />
+                <br />
+            </div>
+            <div class="col-lg-8">
+                <partial name="_CommentListCardPartial" model="@_context.Comments.Where(x => x.Title == ViewData["Title"]).ToList()"></partial>
+                <div class="review-add">
+                    <partial name="_CommentCardPartial" model="@Model"></partial>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

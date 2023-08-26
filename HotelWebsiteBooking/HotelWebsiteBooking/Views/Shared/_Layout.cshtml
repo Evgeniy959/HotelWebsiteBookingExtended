@@ -68,8 +68,16 @@
                                 <ul>
                                     <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
                                     <li><a asp-controller="Room" asp-action="Rooms">Комнаты</a></li>
-                                    <li><a asp-controller="Home" asp-action="AboutUs">О нас</a></li>
-                                    <li><a asp-controller="Home" asp-action="News">Новости</a></li>
+                                    <li><a asp-controller="Home" asp-action="AboutUs">Об отеле</a></li>
+                                    <li><a asp-controller="Home" asp-action="Spa">Развлечения</a>
+                                        <ul class="dropdown">
+                                            <li><a asp-controller="Home" asp-action="Pool">Летний бассейн</a></li>
+                                            <li><a asp-controller="Home" asp-action="Restaurant">Ресторан</a></li>
+                                            <li><a asp-controller="Home" asp-action="Spa">СПА-зона</a></li>
+                                            <li><a asp-controller="Home" asp-action="Restaurant">Бильярд</a></li>
+                                            <li><a asp-controller="Home" asp-action="Restaurant">Беседки с мангалом</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a asp-controller="Home" asp-action="Contact">Контакты</a></li>
                                 </ul>
                             </nav>
@@ -95,7 +103,7 @@
                         <div class="ft-about">
                             <div class="logo">
                                 <a href="#">
-                                    <img src="~/img/logo-sirius.png" alt="">
+                                    <img src="~/img/" alt="">
                                 </a>
                             </div>
                             <p>We inspire and reach millions of travelers<br /> across 90 local websites</p>
@@ -110,7 +118,7 @@
                     </div>
                     <div class="col-lg-3 offset-lg-1">
                         <div class="ft-contact">
-                            <h6>Contact Us</h6>
+                            <h6>Связаться с нами</h6>
                             <ul>
                                 <li>8(800) 350 4590</li>
                                 <li>info.myhotel@gmail.com</li>
@@ -120,8 +128,8 @@
                     </div>
                     <div class="col-lg-3 offset-lg-1">
                         <div class="ft-newslatter">
-                            <h6>New latest</h6>
-                            <p>Get the latest updates and offers.</p>
+                            <h6>Самые выгодные акции и скидки</h6>
+                            <p>от MyHotel за подписку!</p>
                             <form asp-action="Subscribe" asp-controller="Subscriber" method="post" class="fn-form">
                                 <input required name="email" type="text" placeholder="Email">
                                 <button type="submit"><i class="fa fa-send"></i></button>
@@ -136,10 +144,10 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <ul>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Environmental Policy</a></li>
+                            <li><a asp-controller="Home" asp-action="Contact">Контакты</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Правила</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,30 @@
+﻿@model HotelWebsiteBooking.Models.Entity.Client
+@{
+    ViewData["Title"] = "InfoPay";
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    @if (TempData.ContainsKey("Status"))
+                    {
+                        <div class="alert alert-success" role="alert">
+                            <h4>
+                                <strong>@TempData["Status"]</strong> 
+                            </h4>
+                            <h4>
+                                Поздравляем @Model.Name! Вы успешно забронировали номер.
+                                Информация о бронировании будет выслана вам на электронную почту в ближайшее время.
+                            </h4>
+                        </div>
+                    }
+                    <div class="bt-option color-text">
+                        <a asp-controller="Home" asp-action="Index">Главная</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

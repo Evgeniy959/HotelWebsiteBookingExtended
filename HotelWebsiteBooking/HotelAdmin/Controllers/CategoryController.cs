@@ -40,7 +40,7 @@ namespace HotelAdmin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Add([Bind("Id,Name,Photo,Square,PersonsCount")] Category category, IFormFile photo)
+        public IActionResult Add([Bind("Id,Name,Photo,Square,PersonsCount,Path")] Category category, IFormFile photo)
         {
             if (ModelState.IsValid && _daoCategory.AddAsync(category, photo).Result == true)
             {
@@ -62,7 +62,7 @@ namespace HotelAdmin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit([Bind("Id,Name,Photo,Square,PersonsCount")] Category category, IFormFile photo)
+        public async Task<IActionResult> Edit([Bind("Id,Name,Photo,Square,PersonsCount,Path")] Category category, IFormFile photo)
         {
             if (ModelState.IsValid && await _daoCategory.UpdateAsync(category, photo) == true)
             {

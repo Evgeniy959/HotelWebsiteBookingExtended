@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "PayEror";
+}
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    @if (TempData.ContainsKey("Status"))
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Уведомление!</strong> @TempData["Status"]
+                        </div>
+                    }
+                    <div class="bt-option">
+                        <a asp-controller="Home" asp-action="Index"><h5 style="color: blue"><strong>Продолжить поиск</strong></h5></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

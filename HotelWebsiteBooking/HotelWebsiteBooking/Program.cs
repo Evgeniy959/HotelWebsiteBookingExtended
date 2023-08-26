@@ -3,6 +3,7 @@ using HotelWebsiteBooking.Models;
 using HotelWebsiteBooking.Service.CommentService;
 using HotelWebsiteBooking.Service.DateService;
 using HotelWebsiteBooking.Service.EmailService;
+using HotelWebsiteBooking.Service.PaymentService;
 using HotelWebsiteBooking.Service.RoomService;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +16,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddTransient<IDaoRoom, DbDaoRoom>();
 builder.Services.AddTransient<IDaoComment, DbDaoComment>();
+builder.Services.AddTransient<IPaymentService, PaymentService>();
 builder.Services.AddSingleton<DaoDate>();
 builder.Services.AddSingleton<DaoGuest>();
 

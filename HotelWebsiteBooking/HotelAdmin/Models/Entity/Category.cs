@@ -16,7 +16,7 @@ namespace HotelAdmin.Models.Entity
         [Column("Persons_count")]
         [Required]
         public int PersonsCount { get; set; }
-        public string? Path { get; set; }
+        public string Path { get; set; }
 
         public ICollection<Room>? Rooms { get; set; }
         public ICollection<CategoryTariff>? TariffAdmins { get; set; }
