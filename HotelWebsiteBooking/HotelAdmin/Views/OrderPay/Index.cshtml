@@ -14,7 +14,6 @@
             <th scope="col">Номер заказа</th>
             <th scope="col">Номер брони</th>
             <th scope="col">Дата</th>
-            <th scope="col">Число гостей</th>
             <th scope="col">Статус</th>            
             <th scope="col">Email Клиента</th>
             <th scope="col"><div class="col-14"></div></th>
@@ -29,7 +28,6 @@
             <td>@item.Id</td>
             <td>@item.BookingNumber</td>
             <td>@item.Date</td>
-            <td>@item.GuestCount</td>
             <td>@item.Status</td>            
             <td>@item.Client.Email</td>
             <td><div class="col-14"><a asp-action="Details" asp-controller="OrderPay" asp-route-id="@item.Id" class="form-control btn btn-secondary">Бронь</a></div></td>

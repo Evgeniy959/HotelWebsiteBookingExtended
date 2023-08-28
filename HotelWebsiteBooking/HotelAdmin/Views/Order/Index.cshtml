@@ -14,12 +14,11 @@
             <th scope="col">Номер заказа</th>
             <th scope="col">Номер брони</th>
             <th scope="col">Дата</th>
-            <th scope="col">Число гостей</th>
             <th scope="col">Статус</th>            
             <th scope="col">Email Клиента</th>
-            <th width="10%"><div class="col-20"></div></th>
-            <th width="10%"><div class="col-20">Actions</div></th>
-            <th width="10%"><div class="col-14"></div></th>
+            <th scope="col"><div class="col-14"></div></th>
+            <th scope="col"><div class="col-14">Actions</div></th>
+            <th scope="col"><div class="col-14"></div></th>
         </tr>
     </thead>
     <tbody>
@@ -29,12 +28,11 @@
             <td>@item.Id</td>
             <td>@item.BookingNumber</td>
             <td>@item.Date</td>
-            <td>@item.GuestCount</td>
             <td>@item.Status</td>
             <td>@item.Client.Email</td>
-            <td width="10%"><div class="col-20"><a asp-action="Details" asp-controller="Order" asp-route-id="@item.Id" class="form-control btn btn-secondary">Бронь</a></div></td>
-            <td width="10%"><div class="col-20"><a asp-action="Edit" asp-controller="Order" asp-route-id="@item.Id" class="form-control btn btn-info">Изменить</a></div></td>
-            <td width="10%"><div class="col-20"><a asp-action="Delete" asp-controller="Order" asp-route-id="@item.Id" class="form-control btn btn-danger">Удалить</a></div></td>
+            <td ><div class="col-14"><a asp-action="Details" asp-controller="Order" asp-route-id="@item.Id" class="form-control btn btn-secondary">Бронь</a></div></td>
+            <td ><div class="col-14"><a asp-action="Edit" asp-controller="Order" asp-route-id="@item.Id" class="form-control btn btn-info">Изменить</a></div></td>
+            <td ><div class="col-14"><a asp-action="Delete" asp-controller="Order" asp-route-id="@item.Id" class="form-control btn btn-danger">Удалить</a></div></td>
         </tr>
 }
     </tbody>
