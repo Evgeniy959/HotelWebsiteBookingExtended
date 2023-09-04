@@ -117,6 +117,7 @@ namespace HotelWebsiteBooking.Service.RoomService
             }
             return rooms.GroupBy(g => g.Room.CategoryId)
                         .Select(r => r.First())
+                        .OrderBy(x => x.Room.CategoryId)
                         .ToList();
         }
         
