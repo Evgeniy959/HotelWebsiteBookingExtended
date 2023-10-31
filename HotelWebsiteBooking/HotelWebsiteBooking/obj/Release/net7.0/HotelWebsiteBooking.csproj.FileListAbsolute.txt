@@ -539,3 +539,8 @@ D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtende
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\HotelWebsiteBooking.pdb
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\HotelWebsiteBooking.genruntimeconfig.cache
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\ref\HotelWebsiteBooking.dll
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\bin\Release\net7.0\publish\web.config
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\bin\Release\net7.0\publish\appsettings.Development.json
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\bin\Release\net7.0\publish\appsettings.json
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\bin\Release\net7.0\publish\HotelWebsiteBooking.deps.json
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\bin\Release\net7.0\publish\HotelWebsiteBooking.runtimeconfig.json

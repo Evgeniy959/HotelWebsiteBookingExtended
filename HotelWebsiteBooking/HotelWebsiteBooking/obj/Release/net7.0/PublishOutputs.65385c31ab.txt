@@ -1,6 +1,11 @@
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\HotelWebsiteBooking.exe
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\publish\web.config
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\appsettings.json
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\publish\appsettings.Development.json
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\publish\appsettings.json
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\publish\HotelWebsiteBooking.deps.json
+D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\publish\HotelWebsiteBooking.runtimeconfig.json
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\HotelWebsiteBooking.dll
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\HotelWebsiteBooking.runtimeconfig.json
 D:\Study-11.02.2023\Study\Диплом\Проекты\HotelWebsiteBookingExtended\HotelWebsiteBooking\HotelWebsiteBooking\obj\Release\net7.0\PubTmp\Out\HotelWebsiteBooking.pdb
