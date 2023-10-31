@@ -1072,6 +1072,598 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\spa3.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test.html))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test.html))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\ad-free-125x101-fade-anim-1x.gif))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/ad-free-125x101-fade-anim-1x.gif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\ad-free-125x101-fade-anim-1x.gif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\ad.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/ad.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\ad.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\amazon.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/amazon.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\amazon.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\analytics.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/analytics.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\analytics.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\apstag.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/apstag.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\apstag.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\bk-coretag.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/bk-coretag.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\bk-coretag.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\config250.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/config250.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\config250.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\English_get-it-from-MS_InvariantCulture_Default.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/English_get-it-from-MS_InvariantCulture_Default.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\English_get-it-from-MS_InvariantCulture_Default.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gauge-gradient-dl-multi-web.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/gauge-gradient-dl-multi-web.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gauge-gradient-dl-multi-web.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gauge-gradient-dl-single-web.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/gauge-gradient-dl-single-web.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gauge-gradient-dl-single-web.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gauge-gradient-ul-multi-web.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/gauge-gradient-ul-multi-web.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gauge-gradient-ul-multi-web.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gauge-gradient-ul-single-web.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/gauge-gradient-ul-single-web.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gauge-gradient-ul-single-web.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\groupblack-white_on_black-1x.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/groupblack-white_on_black-1x.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\groupblack-white_on_black-1x.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gtm.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/gtm.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\gtm.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\icg_5g.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/icg_5g.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\icg_5g.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\icg_enterprise.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/icg_enterprise.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\icg_enterprise.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\icg_globalindex.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/icg_globalindex.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\icg_globalindex.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\icg_insights.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/icg_insights.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\icg_insights.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\id5-api.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/id5-api.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\id5-api.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\js))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\js))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\krux-coretag.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/krux-coretag.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\krux-coretag.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\ls.html))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/ls.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\ls.html))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\main.bfc2139cdbc60df41333f3d4fc4af39e.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/main.bfc2139cdbc60df41333f3d4fc4af39e.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\main.bfc2139cdbc60df41333f3d4fc4af39e.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\nlsSDK600.bundle.min.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/nlsSDK600.bundle.min.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\nlsSDK600.bundle.min.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\prebid.7.43.0.min.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/prebid.7.43.0.min.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\prebid.7.43.0.min.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\pwt.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/pwt.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\pwt.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\saved_resource(1).html))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/saved_resource(1).html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\saved_resource(1).html))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\saved_resource.html))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/saved_resource.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\saved_resource.html))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\speedtest-main.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/speedtest-main.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\speedtest-main.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\spgdj7g8u.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/spgdj7g8u.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\spgdj7g8u.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\storageframe.html))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/storageframe.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\storageframe.html))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\v60a.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/v60a.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\v60a.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\z0WVjCBSEeGLoxIxOQVEwQ))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/z0WVjCBSEeGLoxIxOQVEwQ</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\z0WVjCBSEeGLoxIxOQVEwQ))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\z0WVjCBSEeGLoxIxOQVEwQ.min.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/z0WVjCBSEeGLoxIxOQVEwQ.min.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\z0WVjCBSEeGLoxIxOQVEwQ.min.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\zd-core-olt.min.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/zd-core-olt.min.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\zd-core-olt.min.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\zdconsent.js.загрузка))">
+      <SourceType>Package</SourceType>
+      <SourceId>HotelWebsiteBooking</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HotelWebsiteBooking</BasePath>
+      <RelativePath>img/fun/Speedtest by Ookla - The Global Broadband Speed Test_files/zdconsent.js.загрузка</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\fun\Speedtest by Ookla - The Global Broadband Speed Test_files\zdconsent.js.загрузка))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\gallery\gallery-1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>HotelWebsiteBooking</SourceId>
